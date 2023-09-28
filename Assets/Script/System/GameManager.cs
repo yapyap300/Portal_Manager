@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public int stage_index;
     public float time;
     public int money;
+    public int maxDestination;
     [Header("# Stage Control")]
     public int count;
     public static GameManager Instance

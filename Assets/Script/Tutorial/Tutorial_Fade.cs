@@ -11,7 +11,7 @@ public class Tutorial_Fade : Tutorial_Base
     {
         if (isFadein)
         {
-            fadeImage.FadeIn(AfterFade);
+            fadeImage.FadeIn(AfterFade,0.8f);
         }
         else
         {

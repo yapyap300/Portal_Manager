@@ -13,9 +13,9 @@ public class Fade_Image : MonoBehaviour
     {
         fadeImage = GetComponent<Image>();
     }
-    public void FadeIn(UnityAction action)
+    public void FadeIn(UnityAction action,float alpha)
     {
-        fadeImage.DOFade(0.5f,1).OnComplete(() => action());
+        fadeImage.DOFade(alpha,1).OnComplete(() => action());
     }
     public void FadeOut(UnityAction action)
     {

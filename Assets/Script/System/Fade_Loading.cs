@@ -8,12 +8,16 @@ using UnityEngine.UI;
 public class Fade_Loading : MonoBehaviour
 {
     [SerializeField] private Image fadeImage;
+    [SerializeField] private Image portal;
     [SerializeField] private Text text;
+    private Sequence mySequence;
+    private int day = 0;
     Color color = new(0, 0, 0, 0);
 
     private void Awake()
     {
         fadeImage = GetComponent<Image>();
+        mySequence.SetAutoKill(false).Pause().Append(text.DOText($"{day}일차", 2, false, ScrambleMode.Custom, "아!출근하기싫다")).Append(portal.DOFade(Mathf.Pow((float)day, 2) * 0.5f, 1).OnStart(() => { }));            
     }
     public void FadeLoadIn(UnityAction action)
     {
@@ -21,12 +25,14 @@ public class Fade_Loading : MonoBehaviour
     }
     public void FadeLoadOut()
     {
-        fadeImage.color = color;        
+        fadeImage.color = color;
+        fadeImage.gameObject.SetActive(false);        
     }
     public IEnumerator TextAnimation(int i)
     {
-        text.DOText($"{i}일차 출근.....",2);
-        yield return new WaitForSeconds(0.5f);
+        day = i;
+        mySequence.Restart();
+        yield return new WaitForSeconds(mySequence.Duration() + 1f);
         FadeLoadOut();
     }
 }
