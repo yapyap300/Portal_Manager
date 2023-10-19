@@ -157,4 +157,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac2924b068a96a64fa609e5c4ce08e56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mySprite: {fileID: 0}
+  myAnimator: {fileID: 0}
+  animations:
+  - {fileID: 9100000, guid: a280a003675e5b74b90c262e1ea5af48, type: 2}
+  - {fileID: 22100000, guid: f51cb6994aef75f4da2c5684fca78c93, type: 2}
+  - {fileID: 22100000, guid: 9f9369a86e058304da9c05902f810933, type: 2}
+  - {fileID: 22100000, guid: d122d1a242e049f4ab73a2e6fe33449e, type: 2}
+  - {fileID: 22100000, guid: 6f694b66a28fa1548b3f648cdd15c800, type: 2}
+  - {fileID: 22100000, guid: 98dfecfacbb453f4b85d29cdcbbfbe3a, type: 2}
+  isFilp: 0
+  area: 0
   isBan: 1

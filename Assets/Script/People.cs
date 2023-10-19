@@ -12,7 +12,7 @@ public class People : MonoBehaviour,IPoolObject
     [SerializeField] private RuntimeAnimatorController[] animations;
     [SerializeField] private bool isFilp;
     [Header("# People Info")]
-    public int destination;
+    public int area;
     public bool isBan;
 
     private void Awake()
@@ -21,26 +21,12 @@ public class People : MonoBehaviour,IPoolObject
         mySprite = GetComponent<SpriteRenderer>();
         myAnimator = GetComponent<Animator>();
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void Move(Transform nextMovePosition)
+    public void Move(Transform nextMovePosition,float moveSpeed)
     {
         if(isFilp)
             mySprite.flipX = false;
         myAnimator.SetBool("Walk", true);
-        gameObject.transform.DOMove(nextMovePosition.position, 1).OnComplete(() => { 
-            if(isFilp)
-                mySprite.flipX = true;
+        gameObject.transform.DOMove(nextMovePosition.position, moveSpeed).SetEase(Ease.Linear).OnComplete(() => {
             myAnimator.SetBool("Walk", false);
         });
     }
@@ -61,13 +47,20 @@ public class People : MonoBehaviour,IPoolObject
         }
         yield return new WaitForSeconds(5f);
     }
+    IEnumerator Filp()
+    {
+        yield return new WaitForSeconds(60f);
+        mySprite.flipX = !mySprite.flipX;
+    }
     private void Init()//풀링시 각종 정보 랜덤으로 다시 갱신
     {
         gameObject.transform.position = init_pos;
-        destination = Random.Range(1, GameManager.Instance.maxDestination + 1);
-        isBan = Random.Range(0,2) > 0? false: true;
-        myAnimator.runtimeAnimatorController = animations[Random.Range(0,7)];
+        area = Random.Range(0, GameManager.Instance.maxDestination);
+        isBan = Random.Range(0,2) > 0;
+        myAnimator.runtimeAnimatorController = animations[Random.Range(0,6)];
         StartCoroutine(AnimationStateChange());
+        if(isFilp)
+            StartCoroutine(Filp());
     }
     public void OnCreatedInPool()
     {
@@ -77,7 +70,6 @@ public class People : MonoBehaviour,IPoolObject
             mySprite.flipX = true;
         }
     }
-
     public void OnGettingFromPool()
     {
         Init();

@@ -7,8 +7,8 @@ public class Tutorial_Control : MonoBehaviour
 {
     [SerializeField] private List<Tutorial_Base> tutorials;
     [SerializeField] private string nextScene;
-    private Tutorial_Base currentBase;
-    private int currentIndex;    
+    private Tutorial_Base currentBase = null;
+    private int currentIndex = -1;    
     private void Start()
     {
         SetNextTutorial();

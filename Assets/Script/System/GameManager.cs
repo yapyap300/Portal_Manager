@@ -11,7 +11,10 @@ public class GameManager : MonoBehaviour
     public int money;
     public int maxDestination;
     [Header("# Stage Control")]
-    public int count;
+    public int maxCount;
+    [Header("# Upgrade Info")]
+    public int countPlus;
+    public bool isCountNumber;
     public static GameManager Instance
     {
         get
