@@ -3,27 +3,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class People_control : MonoBehaviour
+public class People_Control : MonoBehaviour
 {
-    [SerializeField] List<People> people;
-    [SerializeField] List<Transform> move_Point;
+    [SerializeField] private List<People> people;
+    [SerializeField] private List<Transform> movePoint;
     private PoolManager poolManager;
 
     void Awake()
     {
         poolManager = GetComponent<PoolManager>();
     }
+    void Start()
+    {
+        for (int i = 0; i < 16; i++)
+        {
+            Spawn();
+            people[i].transform.position = movePoint[i].position;
+        }
+    }
     public void Init()//각 스테이지 마다 다시 사람들을 배치할때 호출
     {
         for (int i = 0; i < 16; i++)
         {
-            ReturnPool(people[0]);
-            people.RemoveAt(0);
+            ReturnPool(people[i]);            
         }
+        people.Clear();
         for (int i = 0; i < 16; i++)
         {
             Spawn();
-            people[^1].transform.position = move_Point[people.Count - 1].position;
+            people[i].transform.position = movePoint[i].position;
         }
     }
     public void Next()
@@ -31,10 +39,10 @@ public class People_control : MonoBehaviour
         ReturnPool(people[0]);
         people.RemoveAt(0);        
         Spawn();
-        people[0].Move(move_Point[0], 4.5f);
-        for (int index = 0; index < people.Count; index++)
+        people[0].Move(movePoint[0], 3.5f);
+        for (int index = 1; index < 16; index++)
         {
-            people[index].Move(move_Point[index],2.5f);
+            people[index].Move(movePoint[index], 1.5f);
         }
     }
     private void Spawn()

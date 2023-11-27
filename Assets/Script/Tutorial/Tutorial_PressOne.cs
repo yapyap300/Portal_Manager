@@ -32,7 +32,7 @@ public class Tutorial_PressOne : Tutorial_Base
         setting[0].gameObject.SetActive(true);
         setting[1].gameObject.SetActive(true);
 
-        while (!Input.GetKeyDown(KeyCode.Alpha1) && !Input.GetKeyDown(KeyCode.Keypad1))
+        while (!Input.GetKeyDown(KeyCode.Keypad1))
         {
             yield return null;
         }

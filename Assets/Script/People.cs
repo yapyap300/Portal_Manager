@@ -11,6 +11,7 @@ public class People : MonoBehaviour,IPoolObject
     [SerializeField] private Animator myAnimator;
     [SerializeField] private RuntimeAnimatorController[] animations;
     [SerializeField] private bool isFilp;
+    private bool isMove = false;
     [Header("# People Info")]
     public int area;
     public bool isBan;
@@ -25,9 +26,10 @@ public class People : MonoBehaviour,IPoolObject
     {
         if(isFilp)
             mySprite.flipX = false;
+        isMove = true;
         myAnimator.SetBool("Walk", true);
         gameObject.transform.DOMove(nextMovePosition.position, moveSpeed).SetEase(Ease.Linear).OnComplete(() => {
-            myAnimator.SetBool("Walk", false);
+            myAnimator.SetBool("Walk", false); isMove = false;
         });
     }
     IEnumerator AnimationStateChange()
@@ -50,7 +52,8 @@ public class People : MonoBehaviour,IPoolObject
     IEnumerator Filp()
     {
         yield return new WaitForSeconds(60f);
-        mySprite.flipX = !mySprite.flipX;
+        if(!isMove)
+            mySprite.flipX = !mySprite.flipX;
     }
     private void Init()//풀링시 각종 정보 랜덤으로 다시 갱신
     {
