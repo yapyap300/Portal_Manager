@@ -15,10 +15,10 @@ public class Fade_Image : MonoBehaviour
     }
     public void FadeIn(UnityAction action,float alpha)
     {
-        fadeImage.DOFade(alpha,3.5f).SetEase(Ease.InExpo).OnComplete(() => action());
+        fadeImage.DOFade(alpha,2.5f).SetUpdate(true).SetEase(Ease.InExpo).OnComplete(() => action());
     }
     public void FadeOut(UnityAction action)
     {
-        fadeImage.DOFade(0, 2f).SetEase(Ease.Linear).OnComplete(() => action());
+        fadeImage.DOFade(0, 2f).SetUpdate(true).SetEase(Ease.Linear).OnComplete(() => action());
     }
 }

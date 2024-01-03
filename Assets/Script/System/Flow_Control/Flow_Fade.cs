@@ -6,12 +6,13 @@ public class Flow_Fade : Flow_Base
 {
     [SerializeField] private Fade_Image fadeImage;
     [SerializeField] private bool isFadein;
+    [SerializeField] private float alpha;
     private bool isEnd;
     public override void Enter()
     {
         if (isFadein)
         {
-            fadeImage.FadeIn(AfterFade, 1f);
+            fadeImage.FadeIn(AfterFade, alpha);
         }
         else
         {

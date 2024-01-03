@@ -9,7 +9,10 @@ public class BGManager : MonoBehaviour
     private bool morningChange = false;
     private bool afternoonChange = false;
     private bool nightChange = false;
-
+    void Awake()
+    {
+        Bg = GetComponent<SpriteRenderer>();
+    }
     void Update()
     {
         if (GameManager.Instance.isStop)

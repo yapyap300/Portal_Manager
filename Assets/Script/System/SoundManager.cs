@@ -65,7 +65,7 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    public void PlaySfx(string name)
+    public void PlaySfx(string name,float time = 0f)
     {
         for (int index = 0; index < sfxPlayer.Length; index++)
         {
@@ -74,6 +74,7 @@ public class SoundManager : MonoBehaviour
             if (sfxPlayer[loopIndex].isPlaying)
                 continue;
             channelIndex = loopIndex;
+            sfxPlayer[loopIndex].time = time;
             sfxPlayer[loopIndex].clip = soundDictionary[name];
             sfxPlayer[loopIndex].Play();
             break;

@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Flow_UpgradeUI : Flow_Base
 {
     [SerializeField] private GameObject upgradeUI;
+    [SerializeField] UnityEvent init;
     bool isEnd = false;
     public override void Enter()
     {
@@ -19,7 +21,7 @@ public class Flow_UpgradeUI : Flow_Base
 
     public override void Exit()
     {
-        throw new System.NotImplementedException();
+        init.Invoke();
     }
     public void Next()
     {

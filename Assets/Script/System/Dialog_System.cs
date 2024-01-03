@@ -4,7 +4,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum Talk { 관리자C = 0, 관리자P = 1, 아이돌I = 2, 배우S = 3, 임원Q = 4}
+public enum Talk { 관리자C = 0, 관리자P = 1, 아이돌L = 2, 작가K = 3, 임원D = 4}
 public class Dialog_System : MonoBehaviour
 {
     [SerializeField] private Dialog[] dialogs;// 현재 분기의 대사 목록

@@ -16,7 +16,7 @@ public class Stage_Upgrade : MonoBehaviour
     void Start()
     {
         error = DOTween.Sequence();
-        error.Append(errorControl.GetComponent<Image>().DOColor(Color.red, 0.5f).SetEase(Ease.Linear).SetLoops(6, LoopType.Yoyo)).Join(Camera.main.DOShakeRotation(1f, 1f))
+        error.Append(errorControl.GetComponent<Image>().DOColor(Color.red, 0.5f).SetEase(Ease.Linear).SetLoops(6, LoopType.Yoyo)).Join(Camera.main.DOShakeRotation(1f, 60f))
             .SetUpdate(true).SetAutoKill(false);
     }
     void OnEnable()
@@ -55,11 +55,10 @@ public class Stage_Upgrade : MonoBehaviour
         GameManager.Instance.money = money;
         GameManager.Instance.countless = iconDatas[0].grade;
         GameManager.Instance.waitTime = iconDatas[1].grade;
-        GameManager.Instance.vipColltime = iconDatas[2].grade;
+        GameManager.Instance.areaView = iconDatas[2].grade == 1;
         GameManager.Instance.isCountNumber = iconDatas[3].grade == 1;
         GameManager.Instance.autoBan = iconDatas[4].grade == 1;
         GameManager.Instance.timeView = iconDatas[5].grade == 1;
-        GameManager.Instance.vipNumber = iconDatas[6].grade;
-        GameManager.Instance.areaView = iconDatas[7].grade == 1;
+        
     }
 }

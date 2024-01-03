@@ -7,10 +7,12 @@ using UnityEngine.UI;
 
 public class Portal : MonoBehaviour
 {
-    [SerializeField] private KeyCode EntryCode;
-    [SerializeField] KeyCode WorkCode;
-    [SerializeField] private People_Control movePeople;
+    [SerializeField] private LayerMask peopleLayer;
+    [SerializeField] private KeyCode EntryCode1;//키패드의 숫자
+    [SerializeField] private KeyCode EntryCode2;//위에 숫자키의 숫자 키패드가 없는 사람도 있을 수 있다.
+    [SerializeField] private KeyCode WorkCode;
     [SerializeField] private RaycastHit2D hit;
+    [SerializeField] private GameObject UI;
     [SerializeField] private Image peopleCount;
     [SerializeField] private Image waitUI;
     [SerializeField] private Text countText;
@@ -23,6 +25,12 @@ public class Portal : MonoBehaviour
     [SerializeField] private int countPenalty;// 정원에 맞춰 보내지 않으면 오르는 변수
     [SerializeField] private int differentPenalty;// 담당구역에 맞추지 못한 사람 수를 세는 변수
     public List<int> people = new(); // 차원문에 할당된 사람의 구역 번호를 가지고 있는 큐
+    void Awake()
+    {
+        peopleCount = UI.transform.GetChild(0).GetComponent<Image>();
+        waitUI = UI.transform.GetChild(1).GetComponent<Image>();
+        countText = UI.transform.GetChild(2).GetComponent<Text>();
+    }
     void OnEnable()
     {
         StartCoroutine(CountNumberUI());
@@ -30,9 +38,15 @@ public class Portal : MonoBehaviour
         StartCoroutine(Entry());
         StartCoroutine(Clear());
     }
-    public int GetAreaID()
+    public int AreaID
     {
-        return areaID;
+        get { return areaID; }
+    }
+    public void VipEntry()//vip에서 접근하는 함수
+    {
+        wait = true;
+        Work();
+        SoundManager.Instance.PlaySfx("Work");
     }
     public void Init(int id)//스테이지마다 초기화를 이용 업그레이드나 이벤트 적용
     {
@@ -41,14 +55,19 @@ public class Portal : MonoBehaviour
         countPenalty = 0;
         differentPenalty= 0;
         maxCount = GameManager.Instance.maxCount;
-        waitTime = 5 - GameManager.Instance.waitTime;
+        waitTime = 7f - GameManager.Instance.waitTime;
         people.Clear();
+        UI.SetActive(true);
+        wait = false;
         if(GameManager.Instance.isCountNumber)
             countText.gameObject.SetActive(true);
     }
     public void EndStage()
     {
-
+        UI.SetActive(false);
+        GameManager.Instance.count += count;
+        GameManager.Instance.countPenalty += countPenalty;
+        GameManager.Instance.areaPenalty += differentPenalty;
     }
     private void Work()//차원문이 작동할때마다 현재 상태에 따른 수치 변화 기록
     {
@@ -66,23 +85,26 @@ public class Portal : MonoBehaviour
         while (true)
         {
             yield return null;
-            if (Input.GetKeyDown(EntryCode))
+            if (!wait && (Input.GetKeyDown(EntryCode1) || Input.GetKeyDown(EntryCode2)))
             {
-                hit = Physics2D.Raycast(transform.position, Vector2.zero, 0, 6); // 마지막 위치로 사람이 이동하기 전에는 눌러도 반응하지 않게 하기위해 레이캐스트 이용
+                hit = Physics2D.Raycast(transform.position, Vector2.zero, 0, peopleLayer); // 마지막 위치로 사람이 이동하기 전에는 눌러도 반응하지 않게 하기위해 레이캐스트 이용
                 if (hit)
                 {
+                    GameManager.Instance.movePeople.Next();
                     if (people.Count == maxCount)
                     {
-                        SoundManager.Instance.PlaySfx("Bip");
-                        peopleCount.DOColor(Color.black, 0.5f).SetLoops(3).OnComplete(() => peopleCount.color = Color.white);
+                        SoundManager.Instance.PlaySfx("Full");
+                        peopleCount.DOColor(Color.black, 0.16f).SetLoops(3).OnComplete(() => peopleCount.color = Color.white);
                         countPenalty++;
                     }
                     else
                     {
+                        if (hit.transform.GetComponent<People>().isBan)
+                            countPenalty++;
+                        GameManager.Instance.defultPay += 5;
                         people.Add(hit.transform.GetComponent<People>().area);
                         SoundManager.Instance.PlaySfx("Entry");                        
-                    }
-                    movePeople.Next();
+                    }                    
                 }
             }
         }
@@ -93,6 +115,8 @@ public class Portal : MonoBehaviour
         {
             if (wait)
             {
+                waitUI.gameObject.SetActive(true);
+                waitUI.transform.DORotate(new Vector3(0f, 0f, 360f), 2f, RotateMode.FastBeyond360).SetLoops(-1).SetEase(Ease.Linear);
                 yield return new WaitForSeconds(waitTime);
                 waitUI.DOKill();
                 waitUI.gameObject.SetActive(false);
@@ -102,8 +126,6 @@ public class Portal : MonoBehaviour
             if (0 < people.Count && Input.GetKeyDown(WorkCode))
             {
                 wait = true;
-                waitUI.gameObject.SetActive(true);
-                waitUI.transform.DORotate(new Vector3(0f, 0f, 360f), 2f,RotateMode.FastBeyond360).SetLoops(-1).SetEase(Ease.Linear);
                 Work();
                 SoundManager.Instance.PlaySfx("Work");
             }
@@ -111,16 +133,18 @@ public class Portal : MonoBehaviour
     }
     IEnumerator CountUI()
     {
-        yield return null;
-        peopleCount.fillAmount = people.Count / maxCount;        
+        while (true)
+        {
+            yield return null;
+            peopleCount.fillAmount = (float)people.Count / maxCount;
+        }
     }
     IEnumerator CountNumberUI()
     {
-        yield return null;
-        countText.text = $"{people.Count} / {maxCount}";
-        if(people.Count / maxCount > 1)
-            countText.color = Color.red;
-        else
-            countText.color = Color.white;
+        while (true)
+        {
+            yield return null;
+            countText.text = $"{people.Count} / {maxCount}";
+        }
     }
 }

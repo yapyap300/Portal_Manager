@@ -12,7 +12,7 @@ public class Pause_Control : MonoBehaviour
     [SerializeField] Transform[] errorControl;//그냥 연출용
     private Sequence error;
 
-    void Start()
+    void Awake()
     {
         error = DOTween.Sequence();
         error.Append(errorControl[0].DOShakePosition(1)).Join(errorControl[1].GetComponent<Image>().DOColor(Color.red, 0.15f)
@@ -29,38 +29,37 @@ public class Pause_Control : MonoBehaviour
             }
             else
             {
-                Init();
+                int hour = Mathf.FloorToInt(GameManager.Instance.time / GameManager.Instance.maxTime * 24);
+                int min = Mathf.FloorToInt(GameManager.Instance.time * (GameManager.Instance.maxTime / 60));
+                time.text = $"{hour} : {min}";
                 errorControl[0].gameObject.SetActive(true);
                 GameManager.Instance.Stop();
             }
         }
     }
-    private void Init()
+    public void Init()//이 부분은 각 스테이지 시작에 한번 갱신해놓으면 되는거라서 public후 초기화과정에서 사용
     {
-        int hour = Mathf.FloorToInt(GameManager.Instance.time / GameManager.Instance.maxTime[GameManager.Instance.stageIndex] * 24);
-        int min = Mathf.FloorToInt(GameManager.Instance.time * (GameManager.Instance.maxTime[GameManager.Instance.stageIndex] / 60));
-        time.text = $"{hour} : {min}";
         if (GameManager.Instance.timeView)
             time.gameObject.SetActive(true);
         for(int index = 0; index < 4; index++)
         {
-            areaPanel[index].GetChild(0).GetComponent<Image>().sprite = GameManager.Instance.areaSprites[GameManager.Instance.portals[index].GetAreaID()];
+            areaPanel[index].GetChild(0).GetComponent<Image>().sprite = GameManager.Instance.areaSprites[GameManager.Instance.portals[index].AreaID];
             if(index < GameManager.Instance.maxDestination)
                 areaPanel[index].gameObject.SetActive(true);
             if (index < GameManager.Instance.vipIndex)
                 vipPanel[index].gameObject.SetActive(true);
         }
     }
-    public void Area(GameObject areaPanel)
+    public void Area(GameObject areaPanel)//구역 정보는 업그레이드 후 확인가능
     {
         if (GameManager.Instance.areaView)
             areaPanel.SetActive(true);
         else
             Error();
     }
-    private void Error()//그냥 채우기용으로 만들어놓은 버튼을 누르면 실행
+    private void Error()//허용되지 않은 버튼을 누르면 실행
     {
-        SoundManager.Instance.PlaySfx("Error");
+        SoundManager.Instance.PlaySfx("Bip");
         error.Restart();
     }
 }
