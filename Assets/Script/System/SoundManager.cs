@@ -1,22 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SoundManager : MonoBehaviour
 {
     private static SoundManager instance;
+    [SerializeField] private AudioMixer audioMixer;
+    private AudioMixerGroup audioMixerGroup;
     [Header("#===BGM")]
-    [SerializeField] AudioClip[] bgmClip;
+    [SerializeField] private AudioClip[] bgmClip;
     public float bgmVolume;
-    AudioSource bgmPlayer;
+    private AudioSource bgmPlayer;
     [Header("#===SFX")]
-    [SerializeField] AudioClip[] sfxClips;
+    [SerializeField] private AudioClip[] sfxClips;
     public float sfxVolume;
-    [SerializeField] int channelCount;
-    int channelIndex;
+    [SerializeField] private int channelCount;
+    private int channelIndex;
 
-    Dictionary<string, AudioClip> soundDictionary;
-    AudioSource[] sfxPlayer;    
+    private Dictionary<string, AudioClip> soundDictionary;
+    private AudioSource[] sfxPlayer;    
 
     public static SoundManager Instance
     {
@@ -42,6 +45,7 @@ public class SoundManager : MonoBehaviour
 
     void PlayerSetUp()
     {
+        audioMixerGroup = audioMixer.FindMatchingGroups("Master")[0];
         GameObject sfx = new("SFX");
         sfx.transform.SetParent(transform);
         sfxPlayer = new AudioSource[channelCount];
@@ -50,6 +54,7 @@ public class SoundManager : MonoBehaviour
             sfxPlayer[index] = sfx.AddComponent<AudioSource>();
             sfxPlayer[index].playOnAwake = false;
             sfxPlayer[index].volume = sfxVolume;
+            sfxPlayer[index].outputAudioMixerGroup = audioMixerGroup;
         }
 
         GameObject bgm = new("BGM");
@@ -65,7 +70,7 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    public void PlaySfx(string name,float time = 0f)
+    public void PlaySfx(string name)
     {
         for (int index = 0; index < sfxPlayer.Length; index++)
         {
@@ -74,21 +79,27 @@ public class SoundManager : MonoBehaviour
             if (sfxPlayer[loopIndex].isPlaying)
                 continue;
             channelIndex = loopIndex;
-            sfxPlayer[loopIndex].time = time;
             sfxPlayer[loopIndex].clip = soundDictionary[name];
             sfxPlayer[loopIndex].Play();
             break;
         }
     }
-    public void PlayBGM(int index)
+    public void SetBGM(int index)
     {
-        if (bgmPlayer.isPlaying == true)
+        if (bgmPlayer.isPlaying)
             bgmPlayer.Stop();
         bgmPlayer.clip = bgmClip[index];
+    }
+    public void PlayBGM()
+    {
         bgmPlayer.Play();
     }
     public void StopBGM()
     {
-        bgmPlayer.Stop();
+        bgmPlayer.Pause();
+    }
+    public void Volume(float sliderValue)
+    {
+        audioMixer.SetFloat("Master", Mathf.Log10(sliderValue) * 10);
     }
 }

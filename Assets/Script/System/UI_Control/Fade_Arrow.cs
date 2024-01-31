@@ -15,7 +15,7 @@ public class Fade_Arrow : MonoBehaviour
 
     private void OnEnable()
     {
-        fadeImage.DOFade(0, 2f).SetLoops(-1,LoopType.Yoyo);
+        fadeImage.DOFade(0, 2f).SetLoops(-1,LoopType.Yoyo).SetUpdate(true);
     }
     private void OnDisable()
     {

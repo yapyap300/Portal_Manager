@@ -33,5 +33,6 @@ public class Flow_Fade : Flow_Base
 
     public override void Exit()
     {
+        isEnd = false;
     }
 }

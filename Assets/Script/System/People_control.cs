@@ -16,7 +16,7 @@ public class People_Control : MonoBehaviour
     }
     public void StageClear()//스테이지 1일때도 init을 부르다보니 여기서 오류가 나서 따로 분리
     {
-        for (int i = 0; i < 16; i++)
+        for (int i = 0; i < people.Count; i++)
         {
             ReturnPool(people[i]);
         }
@@ -36,7 +36,7 @@ public class People_Control : MonoBehaviour
         people[0].Move(lastPoint, 0.1f);
         ReturnPool(people[0]);
         people.RemoveAt(0);
-        people[0].Move(movePoint[0], 1f);
+        people[0].Move(movePoint[0], 1.5f);
         for (int index = 1; index < 16; index++)
         {
             people[index].Move(movePoint[index], 0.5f);

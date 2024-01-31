@@ -12,8 +12,6 @@ public class Play_Loading : MonoBehaviour
     }
     void OnEnable()
     {
-        image.localScale = defaultSize;
-        SoundManager.Instance.PlaySfx("Loading", 4.121f);
-        image.DOScale(size[GameManager.Instance.stageIndex], 5).OnComplete(() => gameObject.SetActive(false)).SetUpdate(true);
+        image.DOScale(size[GameManager.Instance.stageIndex], 4).OnComplete(() => { image.localScale = defaultSize; gameObject.SetActive(false); }).SetUpdate(true);
     }
 }

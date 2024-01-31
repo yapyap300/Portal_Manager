@@ -13,6 +13,6 @@ public class Stage_Data : MonoBehaviour
     public int stageTime;
     public int portalCount;
     public bool[] portalActive;
-    public int[] portalArea;
+    public bool isMix;
     public int vipIndex;
 }

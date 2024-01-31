@@ -38,11 +38,11 @@ public class Portal : MonoBehaviour
         StartCoroutine(Entry());
         StartCoroutine(Clear());
     }
-    public int AreaID
+    public (KeyCode,KeyCode) Keys
     {
-        get { return areaID; }
+        get { return (EntryCode1, EntryCode2); }
     }
-    public void VipEntry()//vip에서 접근하는 함수
+    public void WorkEntry()//vip관리에서도 접근할 수 있게 함수를 따로 뺌
     {
         wait = true;
         Work();
@@ -125,9 +125,7 @@ public class Portal : MonoBehaviour
             yield return null;
             if (0 < people.Count && Input.GetKeyDown(WorkCode))
             {
-                wait = true;
-                Work();
-                SoundManager.Instance.PlaySfx("Work");
+                WorkEntry();
             }
         }
     }

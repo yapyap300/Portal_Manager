@@ -15,7 +15,7 @@ public class Pause_Control : MonoBehaviour
     void Awake()
     {
         error = DOTween.Sequence();
-        error.Append(errorControl[0].DOShakePosition(1)).Join(errorControl[1].GetComponent<Image>().DOColor(Color.red, 0.15f)
+        error.Append(errorControl[0].DOShakePosition(1,3)).Join(errorControl[1].GetComponent<Image>().DOColor(Color.red, 0.15f)
             .SetEase(Ease.Linear).SetLoops(6, LoopType.Yoyo)).SetUpdate(true).SetAutoKill(false);
     }
     void Update()
@@ -24,26 +24,28 @@ public class Pause_Control : MonoBehaviour
         {
             if (GameManager.Instance.isStop)
             {
+                SoundManager.Instance.PlaySfx("PopupClose");
                 errorControl[0].gameObject.SetActive(false);
                 GameManager.Instance.Resume();
             }
             else
             {
-                int hour = Mathf.FloorToInt(GameManager.Instance.time / GameManager.Instance.maxTime * 24);
-                int min = Mathf.FloorToInt(GameManager.Instance.time * (GameManager.Instance.maxTime / 60));
-                time.text = $"{hour} : {min}";
+                SoundManager.Instance.PlaySfx("PopupOpen");
+                int hour = Mathf.FloorToInt(GameManager.Instance.time / (GameManager.Instance.maxTime * 5)) + 8;
+                int min = Mathf.FloorToInt(GameManager.Instance.time * 12 / GameManager.Instance.maxTime) % 60;
+                time.text = $"{hour} : {min:D2}";
                 errorControl[0].gameObject.SetActive(true);
                 GameManager.Instance.Stop();
             }
         }
     }
-    public void Init()//이 부분은 각 스테이지 시작에 한번 갱신해놓으면 되는거라서 public후 초기화과정에서 사용
+    public void Init()//이 부분은 각 스테이지 시작에 한번 갱신해놓으면 되는거라서 public후 초기화과정에서 사용 중간 이벤트에서도 활용
     {
         if (GameManager.Instance.timeView)
             time.gameObject.SetActive(true);
         for(int index = 0; index < 4; index++)
         {
-            areaPanel[index].GetChild(0).GetComponent<Image>().sprite = GameManager.Instance.areaSprites[GameManager.Instance.portals[index].AreaID];
+            areaPanel[index].GetChild(0).GetComponent<Image>().sprite = GameManager.Instance.areaSprites[GameManager.Instance.portalArea[index]];
             if(index < GameManager.Instance.maxDestination)
                 areaPanel[index].gameObject.SetActive(true);
             if (index < GameManager.Instance.vipIndex)
@@ -53,9 +55,30 @@ public class Pause_Control : MonoBehaviour
     public void Area(GameObject areaPanel)//구역 정보는 업그레이드 후 확인가능
     {
         if (GameManager.Instance.areaView)
+        {
+            SoundManager.Instance.PlaySfx("Icon");
             areaPanel.SetActive(true);
+        }
         else
             Error();
+    }
+    public void VipInfo(GameObject VipInfoPanel)//Vip등장전에는 눌러도 안됨
+    {
+        if (GameManager.Instance.vipIndex < 1)
+            Error();
+        else
+        {
+            SoundManager.Instance.PlaySfx("Icon");
+            VipInfoPanel.SetActive(true);
+        }
+    }
+    public void QuitGame()
+    {
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
     }
     private void Error()//허용되지 않은 버튼을 누르면 실행
     {

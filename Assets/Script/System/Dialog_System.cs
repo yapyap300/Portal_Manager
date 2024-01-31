@@ -84,11 +84,12 @@ public class Dialog_System : MonoBehaviour
         // 화자의 대사 텍스트 활성화 및 설정 (Typing Effect)        
         textDialogues[(int)currentTalk].gameObject.SetActive(true);        
         isTyping = true;
-        textDialogues[(int)currentTalk].DOText(dialogs[currentIndex].dialogue, speed * dialogs[currentIndex].dialogue.Length).SetEase(Ease.Linear).OnComplete(() => { isTyping = false; objectArrows[(int)currentTalk].SetActive(true); });        
+        textDialogues[(int)currentTalk].DOText(dialogs[currentIndex].dialogue, speed * dialogs[currentIndex].dialogue.Length).SetEase(Ease.Linear).SetUpdate(true).OnComplete(() => { isTyping = false; objectArrows[(int)currentTalk].SetActive(true); });        
     }
 
     private void InActiveObjects(int index)
     {
+        if (images[index] == null) return;
         images[index].gameObject.SetActive(false);
         textDialogues[index].text = "";
         textDialogues[index].gameObject.SetActive(false);
