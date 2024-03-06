@@ -11,6 +11,11 @@ public class Writer : VIP_Base
         return true;
     }
 
+    public override void PlayEventSound()
+    {
+        SoundManager.Instance.PlaySfx("Writer");
+    }
+
     public override void Process()
     {
         

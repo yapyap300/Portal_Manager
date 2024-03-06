@@ -10,13 +10,13 @@ public class Scrollpage_Control : MonoBehaviour
     [SerializeField] private float swapTime = 0.2f;
     [SerializeField] private float minDistance = 50f;
 
-    private float[] pageValue;
-    private float distance;
-    private float startClick;
-    private float endClick;
-    private int currentPage;
-    private int maxPage;
-    private bool isPlay;
+    [SerializeField] private float[] pageValue;
+    [SerializeField] private float distance;
+    [SerializeField] private float startClick;
+    [SerializeField] private float endClick;
+    [SerializeField] private int currentPage;
+    [SerializeField] private int maxPage;
+    [SerializeField] private bool isPlay;
     void Awake()
     {
         pageValue = new float[transform.childCount];
@@ -24,6 +24,11 @@ public class Scrollpage_Control : MonoBehaviour
         for (int index = 0; index < pageValue.Length; index++)
             pageValue[index] = distance * index;
         maxPage = transform.childCount;
+    }
+    void OnEnable()
+    {
+        Debug.Log("init");
+        StartPage();
     }
     void Update()
     {
@@ -50,7 +55,7 @@ public class Scrollpage_Control : MonoBehaviour
             return;
         }
 
-        bool isLeft = startClick < endClick? true: false;
+        bool isLeft = startClick < endClick;
         if (isLeft)
         {
             if (currentPage == 0) return;
@@ -82,7 +87,8 @@ public class Scrollpage_Control : MonoBehaviour
     }
     public void StartPage()
     {
+        transform.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
         currentPage = 0;
-        scrollbar.value = pageValue[0];
+        scrollbar.value = 0;
     }
 }

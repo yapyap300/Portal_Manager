@@ -15,7 +15,7 @@ public class Kickout : MonoBehaviour
     {
         banPenalty = 0;
         StartCoroutine(KickPeople());
-        if (GameManager.Instance.isInactive)
+        if (GameManager.Instance.isInactive)//포탈이 하나 비활성화되면 그 포탈로 안내하는걸 이 스크립트에서 받아서 반응해줌
         {
             var portalKeyCode = GameManager.Instance.portals[GameManager.Instance.InactiveIndex].Keys;
             entryCode1 = portalKeyCode.Item1;
@@ -59,7 +59,7 @@ public class Kickout : MonoBehaviour
             yield return null;
             if (Input.GetKeyDown(entryCode1) || Input.GetKeyDown(entryCode2))
             {
-                hit = Physics2D.Raycast(transform.position, Vector2.zero, 0, people); // 마지막 위치로 사람이 이동하기 전에는 눌러도 반응하지 않게 하기위해 레이캐스트 이용
+                hit = Physics2D.Raycast(transform.position, Vector2.zero, 0, people);
                 if (hit)
                 {
                     SoundManager.Instance.PlaySfx("Error");

@@ -10,7 +10,7 @@ public class Flow_EndUI : Flow_Base
     public override void Enter()
     {
         GameManager.Instance.StageEnd();
-        SoundManager.Instance.SetBGM(3);
+        SoundManager.Instance.SetBGM("StageEnd");
         SoundManager.Instance.PlayBGM();
         endUI.SetActive(true);
     }

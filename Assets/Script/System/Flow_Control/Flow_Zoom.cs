@@ -10,7 +10,7 @@ public class Flow_Zoom : Flow_Base
     [SerializeField] bool isPlay = false;
     public override void Enter()
     {        
-        zoom.SetActive(isIn);        
+        zoom.SetActive(isIn);
         vip.SetBool("Event",isPlay);        
     }
 

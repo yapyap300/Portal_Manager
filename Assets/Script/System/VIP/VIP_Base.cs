@@ -22,7 +22,8 @@ public abstract class VIP_Base : MonoBehaviour
     }
     void OnDisable()
     {
-        transform.position = defult;
+        transform.DOKill();
+        transform.localPosition = defult;
     }
     public void Move(Vector3 position,bool active = true)
     {
@@ -30,7 +31,7 @@ public abstract class VIP_Base : MonoBehaviour
         transform.DOMove(position, moveSpeed).SetEase(Ease.Linear)
             .OnComplete(() => { animator.SetBool("Walk", false); if (isFirst) { first.SetActive(true); isFirst = false; } gameObject.SetActive(active); });
     }
-
+    public abstract void PlayEventSound();
     public abstract bool NecessaryCondition(Portal portal);//vip들의 진입 조건 확인
     public abstract void Process();//vip를 보냈을때 차원문의 인원수 패널티를 무마시키기위해 동작 보통 패널티만큼 게임매니저의 패널티 카운트를 미리 감소시켜놓음
 }

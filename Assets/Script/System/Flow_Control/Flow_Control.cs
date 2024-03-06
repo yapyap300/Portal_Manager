@@ -41,11 +41,13 @@ public class Flow_Control : MonoBehaviour //튜토리얼이랑 다른점이 하나라서 상속�
         currentBase = null;
         gameObject.SetActive(false);
         GameManager.Instance.Resume();
+        GameManager.Instance.isEvent = false;
     }
     IEnumerator WaitEnd()
     {
-        yield return new WaitUntil(() => !GameManager.Instance.isStop);
+        yield return new WaitUntil(() => !GameManager.Instance.isEvent);
         GameManager.Instance.Stop();
+        GameManager.Instance.isEvent = true;
         currentIndex = -1;
         SetNextFlow();
     }

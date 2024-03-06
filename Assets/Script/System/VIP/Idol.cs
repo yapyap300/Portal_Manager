@@ -19,4 +19,9 @@ public class Idol : VIP_Base
     {
         particle.Play();
     }
+
+    public override void PlayEventSound()
+    {
+        SoundManager.Instance.PlaySfx("Idol");
+    }
 }

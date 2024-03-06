@@ -60,7 +60,7 @@ public class Dialog_System : MonoBehaviour
                     // 모든 대화 관련 게임오브젝트 비활성화
                     InActiveObjects(i);
                 }
-
+                currentIndex = -1; //재활용할 스크립트는 항상 종료시 인덱스 초기화
                 return true;
             }
         }
@@ -84,7 +84,15 @@ public class Dialog_System : MonoBehaviour
         // 화자의 대사 텍스트 활성화 및 설정 (Typing Effect)        
         textDialogues[(int)currentTalk].gameObject.SetActive(true);        
         isTyping = true;
-        textDialogues[(int)currentTalk].DOText(dialogs[currentIndex].dialogue, speed * dialogs[currentIndex].dialogue.Length).SetEase(Ease.Linear).SetUpdate(true).OnComplete(() => { isTyping = false; objectArrows[(int)currentTalk].SetActive(true); });        
+        textDialogues[(int)currentTalk].DOText(dialogs[currentIndex].dialogue, speed * dialogs[currentIndex].dialogue.Length).SetEase(Ease.Linear).SetUpdate(true).OnPlay(() => StartCoroutine(TalkSound())).OnComplete(() => { isTyping = false; objectArrows[(int)currentTalk].SetActive(true); });        
+    }
+    IEnumerator TalkSound()
+    {
+        while (isTyping)
+        {
+            SoundManager.Instance.PlayDialog(Random.Range(0.8f,2.0f));
+            yield return new WaitForSecondsRealtime(speed * 2);
+        }
     }
 
     private void InActiveObjects(int index)

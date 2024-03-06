@@ -24,4 +24,9 @@ public class Boss : VIP_Base
     {
         GameManager.Instance.countPenalty -= number;
     }
+
+    public override void PlayEventSound()
+    {
+        SoundManager.Instance.PlaySfx("Boss");
+    }
 }

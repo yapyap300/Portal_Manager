@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,18 +26,13 @@ public class Portal : MonoBehaviour
     [SerializeField] private int countPenalty;// 정원에 맞춰 보내지 않으면 오르는 변수
     [SerializeField] private int differentPenalty;// 담당구역에 맞추지 못한 사람 수를 세는 변수
     public List<int> people = new(); // 차원문에 할당된 사람의 구역 번호를 가지고 있는 큐
-    void Awake()
-    {
-        peopleCount = UI.transform.GetChild(0).GetComponent<Image>();
-        waitUI = UI.transform.GetChild(1).GetComponent<Image>();
-        countText = UI.transform.GetChild(2).GetComponent<Text>();
-    }
     void OnEnable()
     {
-        StartCoroutine(CountNumberUI());
         StartCoroutine(CountUI());
         StartCoroutine(Entry());
         StartCoroutine(Clear());
+        if (GameManager.Instance.isCountNumber)
+            StartCoroutine(CountNumberUI());        
     }
     public (KeyCode,KeyCode) Keys
     {
@@ -57,13 +53,14 @@ public class Portal : MonoBehaviour
         maxCount = GameManager.Instance.maxCount;
         waitTime = 7f - GameManager.Instance.waitTime;
         people.Clear();
-        UI.SetActive(true);
         wait = false;
-        if(GameManager.Instance.isCountNumber)
-            countText.gameObject.SetActive(true);
     }
-    public void EndStage()
+    public void EndStage()//스테이지 종료시 저장해둔 상태 변수들 전달하여 총 급여 계산에 사용
     {
+        waitUI.transform.rotation = Quaternion.identity;
+        waitUI.transform.DOKill();
+        waitUI.gameObject.SetActive(false);
+        wait = false;
         UI.SetActive(false);
         GameManager.Instance.count += count;
         GameManager.Instance.countPenalty += countPenalty;
@@ -118,7 +115,8 @@ public class Portal : MonoBehaviour
                 waitUI.gameObject.SetActive(true);
                 waitUI.transform.DORotate(new Vector3(0f, 0f, 360f), 2f, RotateMode.FastBeyond360).SetLoops(-1).SetEase(Ease.Linear);
                 yield return new WaitForSeconds(waitTime);
-                waitUI.DOKill();
+                waitUI.transform.rotation = Quaternion.identity;
+                waitUI.transform.DOKill();
                 waitUI.gameObject.SetActive(false);
                 wait = false;
             }
@@ -131,6 +129,7 @@ public class Portal : MonoBehaviour
     }
     IEnumerator CountUI()
     {
+        UI.SetActive(true);
         while (true)
         {
             yield return null;
@@ -139,6 +138,7 @@ public class Portal : MonoBehaviour
     }
     IEnumerator CountNumberUI()
     {
+        countText.gameObject.SetActive(true);
         while (true)
         {
             yield return null;

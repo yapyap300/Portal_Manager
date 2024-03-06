@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class Flow_UpgradeUI : Flow_Base
 {
+    [SerializeField] private GameObject winUI;
     [SerializeField] private GameObject upgradeUI;
     [SerializeField] private GameObject gameOverUI;
     [SerializeField] UnityEvent init;
@@ -13,14 +14,24 @@ public class Flow_UpgradeUI : Flow_Base
     {
         if (GameManager.Instance.endMoney >= 0)
         {
-            SoundManager.Instance.SetBGM(4);
-            SoundManager.Instance.PlayBGM();
-            upgradeUI.SetActive(true);
+            if (GameManager.Instance.stageIndex == 10)
+            {
+                SoundManager.Instance.SetBGM("Win");
+                SoundManager.Instance.PlayBGM();
+                winUI.SetActive(true);
+            }
+            else
+            {
+                SoundManager.Instance.SetBGM("Shop");
+                SoundManager.Instance.PlayBGM();
+                upgradeUI.SetActive(true);
+            }
         }
         else
         {
-            SoundManager.Instance.SetBGM(5);
+            SoundManager.Instance.SetBGM("GameOver");
             SoundManager.Instance.PlayBGM();
+            GameManager.Instance.gameoverCount++;
             GameManager.Instance.stageIndex--;//게임 오버면 다시 시작할때 현 스테이지로 다시 초기화 하기위해 미리 감소
             gameOverUI.SetActive(true);
         }

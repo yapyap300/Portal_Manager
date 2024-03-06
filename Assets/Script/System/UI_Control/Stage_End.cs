@@ -35,13 +35,13 @@ public class Stage_End : MonoBehaviour
         pay = GameManager.Instance.defultPay + GameManager.Instance.count * 10;
         areaPenaltyMoney = GameManager.Instance.areaPenalty * 30;
         countPenaltyMoney = GameManager.Instance.countPenalty * 30;
-        bonusMoney = GameManager.Instance.bonus * 1000;
+        bonusMoney = GameManager.Instance.bonus * 500;
         result = money + pay - areaPenaltyMoney - countPenaltyMoney + bonusMoney - tex[GameManager.Instance.stageIndex];
     }
     private void EndPannelIn()
     {
         moneyTexts[0].text = $"{money:N0}";
-        moneyTexts[1].text = $"{pay:N00}";
+        moneyTexts[1].text = $"{pay:N0}";
         moneyTexts[2].text = $"-{areaPenaltyMoney:N0}";
         moneyTexts[3].text = $"-{countPenaltyMoney:N0}";
         moneyTexts[4].text = $"{bonusMoney:N0}";
@@ -51,6 +51,7 @@ public class Stage_End : MonoBehaviour
     }
     public void InActive()//다음 스테이지로 넘어가는 버튼에 적용할 함수
     {
+        GameManager.Instance.totalPay += pay + bonusMoney; 
         GameManager.Instance.endMoney = result;
         foreach (Text t in nameTexts)
             t.gameObject.SetActive(false);

@@ -20,7 +20,14 @@ public class GameManager : MonoBehaviour
     public int stageIndex;
     public float time; 
     public bool isStop;
+    public bool isEvent;
     public int maxTime;
+    [Header("# Game Total Info")]//게임을 클리어 했을때 총 점수 계산 게임오버된 스테이지의 수치도 전부 계산
+    public int wrongCount;
+    public int wrongArea;
+    public int totalPay;
+    public int vipCount;
+    public int gameoverCount;
     [Header("# Stage Event Info")]
     public bool isMix;
     public bool isInactive;
@@ -55,11 +62,14 @@ public class GameManager : MonoBehaviour
     }
     void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            StageInit();
-        }
+        if (instance == null)        
+            instance = this;       
+    }
+    void Start()
+    {
+        Stop();
+        StageInit();
+        Resume();
     }
     void Update()
     {
@@ -84,16 +94,23 @@ public class GameManager : MonoBehaviour
     }
     public void StageInit()//함수로 만들어두고 endflow에서 업그레이드 끝나고 실행시킬 예정
     {
-        isMix = stages[stageIndex].isMix;
-        if (isMix)
-            RandomArea();
-        isInactive = false;
+        SoundManager.Instance.SetBGM($"BGM0{(stageIndex % 3) + 1}");
         stageIndex++;
+        defultPay = 0;
+        count = 0;
+        countPenalty = 0;
+        areaPenalty = 0;
+        bonus = 0;
+        time = 0;
+        isMix = stages[stageIndex].isMix;        
+        isInactive = false;
         maxDestination = stages[stageIndex].portalCount;
         maxTime = stages[stageIndex].stageTime;
         maxCount = 25 - (countless * 3);
         vipIndex = stages[stageIndex].vipIndex;
         kickout.auto = autoBan;
+        if (isMix)
+            RandomArea();
         for (int index = 0; index < maxDestination; index++)
         {
             portals[index].Init(portalArea[index]);
@@ -102,20 +119,12 @@ public class GameManager : MonoBehaviour
                 isInactive = true;
                 InactiveIndex = index;
             }
-            else
-            {
+            else            
                 portals[index].gameObject.SetActive(true);
-            }
         }
         kickout.gameObject.SetActive(true);
         if(vipIndex > 0)
-            vipControl.SetActive(true);
-        defultPay = 0;
-        count = 0;
-        countPenalty = 0;
-        areaPenalty = 0;
-        bonus = 0;        
-        time = 0;
+            vipControl.SetActive(true);        
         movePeople.Init();
         if (isMix)
         {
@@ -123,9 +132,6 @@ public class GameManager : MonoBehaviour
             SoundManager.Instance.PlaySfx("Mix");
         }
         backgroundControl.SetActive(true);
-        SoundManager.Instance.SetBGM(stageIndex % 3);
-        if (stageIndex == 1)
-            SoundManager.Instance.PlayBGM();
     }
     public void StageEvent()//만들면서 많은 변화가 있었지만 결국 스테이지 초반에만 대화형식의 이벤트가 진행되는 이 게임의 한계상 이렇게만 해도 될듯하다 스테이지 중간에 이벤트나 연출이 필요하다면 그냥 오브젝트 하나를 만들어서 조건을 만족할때까지 대기하다 만족하면 이벤트 플로우를 활성화 하는 식으로 해도 될듯하다.
     {
@@ -147,6 +153,9 @@ public class GameManager : MonoBehaviour
         if(vipControl.activeSelf)
             vipControl.SetActive(false);
         backgroundControl.SetActive(false);
+        wrongCount += countPenalty;
+        wrongArea += areaPenalty;
+        vipCount += bonus;
     }
     public void RandomArea()//스테이지 인덱스 랜덤
     {
@@ -157,7 +166,7 @@ public class GameManager : MonoBehaviour
             do
             {
                 area = Random.Range(0, maxDestination);
-            } while (area == index || check[area]);
+            } while (check[area]);
             check[area] = true;
             portalArea[index] = area;
             portaToArea[area] = index;//각 차원문에 담당 구역을 전해줫다면 각 구역에 연결된 차원문의 인덱스도 따로 저장 이유는 뒤섞임과 비활성화가 같이 됐을때 이용하려고            

@@ -1,5 +1,7 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,8 +9,6 @@ public class Tutorial_PressA : Tutorial_Base
 {
     [SerializeField] Image[] setting;
     [SerializeField] Image count;// 1명 들어간걸 표시 해줄 ui
-    [SerializeField] AudioSource source;
-    [SerializeField] AudioClip sound;
     bool isEnd = false;
     public override void Enter()
     {
@@ -23,6 +23,7 @@ public class Tutorial_PressA : Tutorial_Base
 
     public override void Exit()
     {
+
     }
     IEnumerator PressA()
     {
@@ -35,8 +36,7 @@ public class Tutorial_PressA : Tutorial_Base
         setting[0].gameObject.SetActive(false);
         setting[1].gameObject.SetActive(false);
 
-        source.clip = sound;
-        source.Play();
+        SoundManager.Instance.PlaySfx("Work");
         count.fillAmount = 0f;        
 
         isEnd = true;

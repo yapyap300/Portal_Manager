@@ -1,3 +1,4 @@
+using DG.Tweening;
 using Redcode.Pools;
 using System.Collections;
 using System.Collections.Generic;
@@ -5,7 +6,6 @@ using UnityEngine;
 
 public class People_Control : MonoBehaviour
 {
-    [SerializeField] private Transform lastPoint;
     [SerializeField] private List<People> people;
     [SerializeField] private Transform[] movePoint;
     private PoolManager poolManager;
@@ -16,9 +16,9 @@ public class People_Control : MonoBehaviour
     }
     public void StageClear()//스테이지 1일때도 init을 부르다보니 여기서 오류가 나서 따로 분리
     {
-        for (int i = 0; i < people.Count; i++)
+        for (int index = 0; index < people.Count; index++)
         {
-            ReturnPool(people[i]);
+            ReturnPool(people[index]);
         }
         people.Clear();
     }
@@ -29,14 +29,15 @@ public class People_Control : MonoBehaviour
             Spawn();
             people[i].transform.position = movePoint[i].position;
         }
+        if (people[0].isBan)
+            people[0].isBan = false;
     }
     public void Next()
     {
         Spawn();
-        people[0].Move(lastPoint, 0.1f);
         ReturnPool(people[0]);
         people.RemoveAt(0);
-        people[0].Move(movePoint[0], 1.5f);
+        people[0].Move(movePoint[0], 1f);
         for (int index = 1; index < 16; index++)
         {
             people[index].Move(movePoint[index], 0.5f);
@@ -49,6 +50,7 @@ public class People_Control : MonoBehaviour
     }
     private void ReturnPool(People clone)
     {
+        clone.transform.DOKill();
         poolManager.TakeToPool<People>(clone);
     }
 }

@@ -2,14 +2,18 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Pause_Control : MonoBehaviour
 {
+    [SerializeField] GameObject[] panels;
     [SerializeField] Transform[] areaPanel;//각 스테이지의 구역정보를 갱신하여 보여줌
     [SerializeField] Transform[] vipPanel;//vip의 정보를 보여줌
     [SerializeField] Text time;// 스테이지의 시간을 보여줌
     [SerializeField] Transform[] errorControl;//그냥 연출용
+    [SerializeField] Sprite[] vipSprite;
+    [SerializeField] string[] vipDescription;
     private Sequence error;
 
     void Awake()
@@ -20,7 +24,7 @@ public class Pause_Control : MonoBehaviour
     }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(!GameManager.Instance.isEvent && Input.GetKeyDown(KeyCode.Escape))
         {
             if (GameManager.Instance.isStop)
             {
@@ -34,6 +38,7 @@ public class Pause_Control : MonoBehaviour
                 int hour = Mathf.FloorToInt(GameManager.Instance.time / (GameManager.Instance.maxTime * 5)) + 8;
                 int min = Mathf.FloorToInt(GameManager.Instance.time * 12 / GameManager.Instance.maxTime) % 60;
                 time.text = $"{hour} : {min:D2}";
+                Open();
                 errorControl[0].gameObject.SetActive(true);
                 GameManager.Instance.Stop();
             }
@@ -45,11 +50,15 @@ public class Pause_Control : MonoBehaviour
             time.gameObject.SetActive(true);
         for(int index = 0; index < 4; index++)
         {
-            areaPanel[index].GetChild(0).GetComponent<Image>().sprite = GameManager.Instance.areaSprites[GameManager.Instance.portalArea[index]];
-            if(index < GameManager.Instance.maxDestination)
-                areaPanel[index].gameObject.SetActive(true);
+            if (index < GameManager.Instance.maxDestination)
+            {
+                areaPanel[index].GetChild(0).GetComponent<Image>().sprite = GameManager.Instance.areaSprites[GameManager.Instance.portalArea[index]];                
+            }
             if (index < GameManager.Instance.vipIndex)
-                vipPanel[index].gameObject.SetActive(true);
+            {
+                vipPanel[index].GetChild(1).GetComponent<Image>().sprite = vipSprite[index];
+                vipPanel[index].GetChild(2).GetChild(0).GetComponent<Text>().text = vipDescription[index];
+            }
         }
     }
     public void Area(GameObject areaPanel)//구역 정보는 업그레이드 후 확인가능
@@ -74,11 +83,13 @@ public class Pause_Control : MonoBehaviour
     }
     public void QuitGame()
     {
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        #else
-            Application.Quit();
-        #endif
+        SoundManager.Instance.StopBGM();
+        SceneManager.LoadScene(0);
+    }
+    private void Open()
+    {
+        for(int index = 0; index < panels.Length; index++)        
+            panels[index].SetActive(false);        
     }
     private void Error()//허용되지 않은 버튼을 누르면 실행
     {

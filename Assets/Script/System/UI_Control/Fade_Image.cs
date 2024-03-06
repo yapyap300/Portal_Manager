@@ -13,12 +13,12 @@ public class Fade_Image : MonoBehaviour
     {
         fadeImage = GetComponent<Image>();
     }
-    public void FadeIn(UnityAction action,float alpha)
+    public void FadeIn(UnityAction action,float alpha,float time)
     {
-        fadeImage.DOFade(alpha,1.5f).SetUpdate(true).SetEase(Ease.InExpo).OnComplete(() => action());
+        fadeImage.DOFade(alpha,time).SetUpdate(true).SetEase(Ease.InExpo).OnComplete(() => action());
     }
-    public void FadeOut(UnityAction action)
+    public void FadeOut(UnityAction action,float time)
     {
-        fadeImage.DOFade(0, 1f).SetUpdate(true).SetEase(Ease.Linear).OnComplete(() => action());
+        fadeImage.DOFade(0, time).SetUpdate(true).SetEase(Ease.InExpo).OnComplete(() => action());
     }
 }

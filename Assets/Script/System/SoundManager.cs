@@ -19,7 +19,9 @@ public class SoundManager : MonoBehaviour
     private int channelIndex;
 
     private Dictionary<string, AudioClip> soundDictionary;
-    private AudioSource[] sfxPlayer;    
+    private AudioSource[] sfxPlayer;
+    private AudioSource[] dialogPlayer;
+    private int dialogIndex;
 
     public static SoundManager Instance
     {
@@ -57,14 +59,30 @@ public class SoundManager : MonoBehaviour
             sfxPlayer[index].outputAudioMixerGroup = audioMixerGroup;
         }
 
+        GameObject dialog = new("Dialog");
+        dialog.transform.SetParent(transform);
+        dialogPlayer = new AudioSource[10];
+        for (int index = 0; index < dialogPlayer.Length; index++)
+        {
+            dialogPlayer[index] = dialog.AddComponent<AudioSource>();
+            dialogPlayer[index].playOnAwake = false;
+            dialogPlayer[index].volume = 0.5f;
+            dialogPlayer[index].outputAudioMixerGroup = audioMixerGroup;
+        }
+
         GameObject bgm = new("BGM");
         bgm.transform.SetParent(transform);
         bgmPlayer = bgm.AddComponent<AudioSource>();
         bgmPlayer.playOnAwake = false;
         bgmPlayer.loop = true;
         bgmPlayer.volume = bgmVolume;
+        bgmPlayer.outputAudioMixerGroup = audioMixerGroup;
 
         foreach (AudioClip clip in sfxClips)
+        {
+            soundDictionary.Add(clip.name, clip);
+        }
+        foreach (AudioClip clip in bgmClip)
         {
             soundDictionary.Add(clip.name, clip);
         }
@@ -84,11 +102,26 @@ public class SoundManager : MonoBehaviour
             break;
         }
     }
-    public void SetBGM(int index)
+    public void PlayDialog(float pitch)
+    {
+        for (int index = 0; index < dialogPlayer.Length; index++)
+        {
+            int loopIndex = (index + dialogIndex) % dialogPlayer.Length;
+
+            if (dialogPlayer[loopIndex].isPlaying)
+                continue;
+            dialogIndex = loopIndex;
+            dialogPlayer[loopIndex].pitch = pitch;
+            dialogPlayer[loopIndex].clip = soundDictionary["TapTap"];
+            dialogPlayer[loopIndex].Play();
+            break;
+        }
+    }
+    public void SetBGM(string name)
     {
         if (bgmPlayer.isPlaying)
             bgmPlayer.Stop();
-        bgmPlayer.clip = bgmClip[index];
+        bgmPlayer.clip = soundDictionary[name];
     }
     public void PlayBGM()
     {

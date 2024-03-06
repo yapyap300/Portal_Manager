@@ -6,16 +6,18 @@ public class Tutorial_Fade : Tutorial_Base
 {
     [SerializeField] private Fade_Image fadeImage;
     [SerializeField] private bool isFadein;
+    [SerializeField] private float fadetime;
+    [SerializeField] private float alpha;
     private bool isEnd;
     public override void Enter()
     {
         if (isFadein)
         {
-            fadeImage.FadeIn(AfterFade,0.8f);
+            fadeImage.FadeIn(AfterFade,alpha,fadetime);
         }
         else
         {
-            fadeImage.FadeOut(AfterFade);
+            fadeImage.FadeOut(AfterFade, fadetime);
         }
     }
     private void AfterFade()

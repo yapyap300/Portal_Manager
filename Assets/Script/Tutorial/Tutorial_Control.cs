@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,7 +21,7 @@ public class Tutorial_Control : MonoBehaviour
             currentBase.Excute(this);
         }
     }
-    public void SetNextTutorial()
+    public void SetNextTutorial(bool skip = false)
     {
         if(currentBase != null)
         {
@@ -32,7 +33,8 @@ public class Tutorial_Control : MonoBehaviour
             EndTutorial();
             return;
         }
-
+        if (skip)
+            currentIndex = tutorials.Count - 3;
         currentIndex++;
         currentBase = tutorials[currentIndex];
 
@@ -41,6 +43,7 @@ public class Tutorial_Control : MonoBehaviour
     public void EndTutorial()
     {
         currentBase = null;
+        DOTween.KillAll();
 
         SceneManager.LoadScene(nextScene);
     }
