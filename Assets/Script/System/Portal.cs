@@ -17,7 +17,7 @@ public class Portal : MonoBehaviour
     [SerializeField] private Image peopleCount;
     [SerializeField] private Image waitUI;
     [SerializeField] private Text countText;
-    [SerializeField] private bool wait;
+    public bool wait;
     [SerializeField] private float waitTime;
     [Header("Portal_Info")]
     [SerializeField] private int areaID;// 이벤트로 차원문이 담당하는 구역을 뒤바꾸기위해 필요한 변수

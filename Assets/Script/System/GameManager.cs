@@ -159,17 +159,16 @@ public class GameManager : MonoBehaviour
     }
     public void RandomArea()//스테이지 인덱스 랜덤
     {
-        bool[] check = new bool[4];
-        for (int index = 0; index < maxDestination; index++)
+        List<int> list = new();
+        for(int index = 0; index < maxDestination; index++)
+            list.Add(index);
+        for (int index = 0; index < maxDestination;)
         {
-            int area;
-            do
-            {
-                area = Random.Range(0, maxDestination);
-            } while (check[area]);
-            check[area] = true;
+            int area = list[Random.Range(0, list.Count)];
+            if (list.Count > 1 && area == index) continue;//랜덤을 섞을때 같은 구역이 나오면 다시 뽑기 대신 마지막 차원문의 랜덤값을 정할때는 남는 구역번호가 본인번호일수 있어서 그냥 바로 넣는다.            
+            list.Remove(area);
             portalArea[index] = area;
-            portaToArea[area] = index;//각 차원문에 담당 구역을 전해줫다면 각 구역에 연결된 차원문의 인덱스도 따로 저장 이유는 뒤섞임과 비활성화가 같이 됐을때 이용하려고            
+            portaToArea[area] = index++;//각 차원문에 담당 구역을 전해줫다면 각 구역에 연결된 차원문의 인덱스도 따로 저장 이유는 뒤섞임과 비활성화가 같이 됐을때 이용하려고 한다.            
         }
     }
 }
