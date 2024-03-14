@@ -585,9 +585,17 @@ PrefabInstance:
         \uD569\uB2C8\uB2E4."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[0].tableKey
+      value: tutorial37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[1].dialogue
       value: "\uAC01 \uCC28\uC6D0\uBB38\uC744 \uAC00\uB3D9\uC2DC\uD0A4\uB294 \uBC84\uD2BC\uC740
         \uAC01\uC790 'A' 'S' 'D' 'F' \uC785\uB2C8\uB2E4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[1].tableKey
+      value: tutorial38
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[2].dialogue
@@ -595,9 +603,17 @@ PrefabInstance:
         \uACC4\uC2DC\uC9C0\uB9CC"
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[2].tableKey
+      value: tutorial39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[3].dialogue
       value: "\uC2E4\uC801\uC744 \uC313\uC73C\uC2E4 \uC218\uB85D \uB354 \uB9CE\uC740
         \uCC28\uC6D0\uBB38\uC744 \uAD00\uB9AC \uD558\uC2DC\uAC8C \uB420\uAC83\uC785\uB2C8\uB2E4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[3].tableKey
+      value: tutorial40
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[4].dialogue
@@ -605,9 +621,33 @@ PrefabInstance:
         \uAC00\uB3D9\uC2DC\uCF1C \uBCF4\uC2ED\uC2DC\uC624."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[4].tableKey
+      value: tutorial41
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[5].dialogue
       value: "'A'\uB97C \uB20C\uB7EC \uAC00\uB4DD\uCC2C 1\uBC88 \uCC28\uC6D0\uBB38\uC744
         \uAC00\uB3D9\uC2DC\uCF1C \uBCF4\uC2ED\uC2DC\uC624."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[0].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[1].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[2].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[3].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[4].tableName
+      value: Tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 6716177157008962723, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: m_Name
@@ -675,6 +715,62 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7864038228165837693, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
   m_PrefabInstance: {fileID: 120356587}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &138166942 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1505848476085125042, guid: 2c11a57a898016145b3a0d954edb121e, type: 3}
+  m_PrefabInstance: {fileID: 257471550}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &138166944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138166942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:d1bdce0648dc502409d895d817b42899
+    m_TableEntryReference:
+      m_KeyId: 215641051136
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 138166945}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &138166945 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 998574971361530254, guid: 2c11a57a898016145b3a0d954edb121e, type: 3}
+  m_PrefabInstance: {fileID: 257471550}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138166942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &145194534
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,6 +782,7 @@ GameObject:
   - component: {fileID: 145194535}
   - component: {fileID: 145194537}
   - component: {fileID: 145194536}
+  - component: {fileID: 145194538}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -755,6 +852,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145194534}
   m_CullTransparentMesh: 1
+--- !u!114 &145194538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145194534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:7d90a01dcbde88e4381c41c4ad480eb0
+    m_TableEntryReference:
+      m_KeyId: 13330780868608
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 145194536}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &187913353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1124,6 +1261,7 @@ GameObject:
   - component: {fileID: 309982861}
   - component: {fileID: 309982863}
   - component: {fileID: 309982862}
+  - component: {fileID: 309982864}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1193,6 +1331,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 309982860}
   m_CullTransparentMesh: 1
+--- !u!114 &309982864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309982860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:7d90a01dcbde88e4381c41c4ad480eb0
+    m_TableEntryReference:
+      m_KeyId: 13646779731968
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 309982862}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  references:
+    version: 2
+    RefIds: []
 --- !u!4 &324253168 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6392754438202389010, guid: fde55de5f05d522499354871e08c0930, type: 3}
@@ -2338,6 +2516,7 @@ GameObject:
   - component: {fileID: 729794987}
   - component: {fileID: 729794989}
   - component: {fileID: 729794988}
+  - component: {fileID: 729794990}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -2407,6 +2586,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729794986}
   m_CullTransparentMesh: 1
+--- !u!114 &729794990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729794986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:7d90a01dcbde88e4381c41c4ad480eb0
+    m_TableEntryReference:
+      m_KeyId: 13615121125376
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 729794988}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &747405516 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6392754438202389008, guid: fde55de5f05d522499354871e08c0930, type: 3}
@@ -3146,9 +3365,17 @@ PrefabInstance:
       value: "\uC798 \uD558\uC167\uC2B5\uB2C8\uB2E4."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[0].tableKey
+      value: tutorial42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[1].dialogue
       value: "\uB2E4\uC74C\uC740 \uC815\uC6D0 \uCD08\uACFC\uC778 \uCC28\uC6D0\uBB38\uC73C\uB85C
         \uC548\uB0B4\uD574\uBCF4\uACA0\uC2B5\uB2C8\uB2E4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[1].tableKey
+      value: tutorial43
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[2].dialogue
@@ -3157,10 +3384,34 @@ PrefabInstance:
         \uAE5C\uBE61\uAC70\uB9AC\uAC8C \uB429\uB2C8\uB2E4."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[2].tableKey
+      value: tutorial44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[3].dialogue
       value: "\uC798\uBABB \uC548\uB0B4\uD55C \uC774\uC6A9\uC790\uC758 \uBD88\uB9CC\uC0AC\uD56D\uC774
         \uC811\uC218\uB418\uC5B4\n\uAE09\uC5EC\uC5D0 \uC601\uD5A5\uC744 \uC8FC\uB2C8
         \uC8FC\uC758\uD574 \uC8FC\uC2DC\uAE30 \uBC14\uB78C\uB2C8\uB2E4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[3].tableKey
+      value: tutorial45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[0].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[1].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[2].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[3].tableName
+      value: Tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 6716177157008962723, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: m_Name
@@ -4033,8 +4284,16 @@ PrefabInstance:
         P\uC785\uB2C8\uB2E4."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[0].tableKey
+      value: tutorial19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[1].dialogue
       value: "\uAC04\uB2E8\uD558\uAC8C \uC124\uBA85\uB4DC\uB9AC\uACA0\uC2B5\uB2C8\uB2E4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[1].tableKey
+      value: tutorial20
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[2].dialogue
@@ -4043,10 +4302,18 @@ PrefabInstance:
         \uAC83 \uC785\uB2C8\uB2E4."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[2].tableKey
+      value: tutorial21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[3].dialogue
       value: "\uAC01 \uC18C\uC18D \uAD6C\uC5ED\uC744 \uAD6C\uBD84\uD558\uC5EC \uC22B\uC790\uD0A4
         '1' , '2' ... \uB97C \uB20C\uB7EC \uC8FC\uC2DC\uBA74\n\uCC28\uC6D0\uBB38\uC73C\uB85C
         \uC774\uC6A9\uC790\uB97C \uBC30\uC815\uD558\uAC8C \uB429\uB2C8\uB2E4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[3].tableKey
+      value: tutorial22
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[4].dialogue
@@ -4055,14 +4322,54 @@ PrefabInstance:
         \uC5C6\uC73C\uB2C8 \uCC38\uACE0 \uBC14\uB78D\uB2C8\uB2E4."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[4].tableKey
+      value: tutorial23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[5].dialogue
       value: "\uD604\uC7AC \uBCF4\uC774\uB294 \uBB38\uC591\uC740 1\uAD6C\uC5ED \uBB38\uC591\uC785\uB2C8\uB2E4.\n\uC798
         \uAE30\uC5B5\uD574 \uB450\uC2DC\uAE38 \uBC14\uB2C8\uB2E4."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[5].tableKey
+      value: tutorial24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[6].dialogue
       value: "\uC790! \uC774\uC81C \uD55C\uBC88 \uC22B\uC790 1\uC744 \uB20C\uB7EC
         \uC774\uC6A9\uC790\uB97C \uBC30\uC815\uD574 \uBCF4\uB3C4\uB85D \uD558\uC8E0"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[6].tableKey
+      value: tutorial25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[0].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[1].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[2].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[3].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[4].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[5].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[6].tableName
+      value: Tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 6716177157008962723, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: m_Name
@@ -4563,6 +4870,7 @@ GameObject:
   - component: {fileID: 1433960343}
   - component: {fileID: 1433960342}
   - component: {fileID: 1433960341}
+  - component: {fileID: 1433960344}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -4603,7 +4911,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCD9C \uADFC"
+  m_Text: 
 --- !u!222 &1433960342
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4632,6 +4940,102 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -383.5}
   m_SizeDelta: {x: 0, y: -767}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1433960344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433960340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:7d90a01dcbde88e4381c41c4ad480eb0
+    m_TableEntryReference:
+      m_KeyId: 700648634273792
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1433960341}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  references:
+    version: 2
+    RefIds: []
+--- !u!1 &1450140866 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4441550073412199405, guid: 6e79a945edb42f844b5033d27c148a97, type: 3}
+  m_PrefabInstance: {fileID: 31711193}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1450140868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450140866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:d1bdce0648dc502409d895d817b42899
+    m_TableEntryReference:
+      m_KeyId: 116764528640
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1450140869}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &1450140869 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7098024753335966918, guid: 6e79a945edb42f844b5033d27c148a97, type: 3}
+  m_PrefabInstance: {fileID: 31711193}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450140866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1451088645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5372,6 +5776,10 @@ PrefabInstance:
         \uCC28\uC6D0\uBB38\uC758 \uD604\uC7AC \uC815\uC6D0 \uC0C1\uD0DC\uC785\uB2C8\uB2E4."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[0].tableKey
+      value: tutorial26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[10].talking
       value: 1
       objectReference: {fileID: 0}
@@ -5382,6 +5790,10 @@ PrefabInstance:
         \uB298\uC5B4\uB09C \uAC83\uC744 \uBCFC \uC218 \uC788\uC2B5\uB2C8\uB2E4."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[1].tableKey
+      value: tutorial27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[2].dialogue
       value: "\uBB3C\uB860 \uC544\uC9C1 \uAD00\uB9AC \uC2DC\uC2A4\uD15C\uC774 \uC5C5\uADF8\uB808\uC774\uB4DC\uB41C
         \uC0C1\uD0DC\uAC00 \uC544\uB2C8\uAE30 \uB54C\uBB38\uC5D0\n\uB300\uB7B5\uC801\uC778
@@ -5389,9 +5801,17 @@ PrefabInstance:
         \uAC81\uB2C8\uB2E4."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[2].tableKey
+      value: tutorial28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[3].dialogue
       value: "\uCC28\uD6C4\uC5D0\uB294 \uC5C5\uADF8\uB808\uC774\uB4DC\uB97C \uD1B5\uD558\uC5EC
         \uB354 \uC218\uC6D4\uD55C \uAD00\uB9AC\uB97C\n\uD558\uC2E4 \uC218 \uC788\uC744\uAC81\uB2C8\uB2E4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[3].tableKey
+      value: tutorial29
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[4].dialogue
@@ -5401,10 +5821,18 @@ PrefabInstance:
         \uAC83\uC744 \uBCF4\uC168\uB098\uC694?"
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[4].tableKey
+      value: tutorial30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[5].dialogue
       value: "\uAC10\uC9C0\uAE30\uB294 \uC774\uC6A9\uC790\uAC00 \uCC28\uC6D0\uBB38
         \uC774\uC6A9\uC5D0 \uAE08\uC9C0\uB41C \uBB3C\uD488\uC744 \uC18C\uC9C0\uD55C
         \uAC83\uC744\n\uC54C\uB824\uC8FC\uB294 \uC5ED\uD560\uC744 \uD569\uB2C8\uB2E4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[5].tableKey
+      value: tutorial31
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[6].dialogue
@@ -5412,9 +5840,17 @@ PrefabInstance:
         \uC774\uC6A9\uC790\uB97C \uCC28\uC6D0\uBB38\uC5D0 \uBC30\uC815\uD558\uC2DC\uBA74\n\uC548\uB429\uB2C8\uB2E4."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[6].tableKey
+      value: tutorial32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[7].dialogue
       value: "\uC774\uC6A9\uC790\uB97C \uBC30\uC815\uD558\uC9C0 \uC54A\uACE0 \uB3CC\uB824\uBCF4\uB0B4\uB294
         \uD0A4\uB294 'X'\uC785\uB2C8\uB2E4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[7].tableKey
+      value: tutorial33
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[8].dialogue
@@ -5423,14 +5859,70 @@ PrefabInstance:
         \uC548\uB429\uB2C8\uB2E4."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[8].tableKey
+      value: tutorial34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[9].dialogue
       value: "\uB2F9\uC5F0\uD558\uAC8C\uB3C4 \uAE08\uC9C0\uB41C \uBB3C\uD488\uC774
         \uC5C6\uB294 \uC774\uC6A9\uC790\uB97C \uB3CC\uB824\uBCF4\uB0B4\uC154\uB3C4\n\uC548\uB429\uB2C8\uB2E4."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[9].tableKey
+      value: tutorial35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[0].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[10].dialogue
       value: "\uC774\uC81C \uC6A9\uB7C9\uC774 \uAC00\uB4DD \uCC28\uC788\uB294 \uCC28\uC6D0\uBB38\uC744
         \uAC00\uB3D9\uC2DC\uCF1C \uBCF4\uB3C4\uB85D \uD558\uACA0\uC2B5\uB2C8\uB2E4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[10].tableKey
+      value: tutorial36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[1].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[2].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[3].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[4].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[5].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[6].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[7].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[8].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[9].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[10].tableName
+      value: Tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 6716177157008962723, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: m_Name
@@ -6021,18 +6513,34 @@ PrefabInstance:
         \uD45C\uC2DC\uD558\uB294 \uBB38\uC591\uC740"
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[0].tableKey
+      value: tutorial46
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[1].dialogue
       value: "\uCD94\uD6C4 \uC5C5\uADF8\uB808\uC774\uB4DC\uB97C \uD1B5\uD558\uC5EC\nESC\uB97C
         \uB20C\uB7EC \uD328\uB110\uC744 \uD655\uC778\uD558\uBA74 \uC54C \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[1].tableKey
+      value: tutorial47
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[2].dialogue
       value: "\uC124\uBA85\uC740 \uC774\uAC83\uC73C\uB85C \uB05D\uC785\uB2C8\uB2E4."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[2].tableKey
+      value: tutorial48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[3].dialogue
       value: "\uB0B4\uC77C\uBD80\uD130  \uC774\uACF3\uC73C\uB85C \uCD9C\uADFC\uD558\uC5EC
         \uAD00\uB9AC\uB97C \uC2DC\uC791\uD558\uC2DC\uBA74 \uB418\uACA0\uC2B5\uB2C8\uB2E4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[3].tableKey
+      value: tutorial49
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[4].dialogue
@@ -6041,6 +6549,22 @@ PrefabInstance:
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[5].dialogue
       value: "\uB2E4\uC74C\uC5D0 \uB610 \uBCFC \uC77C\uC774 \uC788\uC73C\uBA74 \uC88B\uACA0\uB124\uC694."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[0].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[1].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[2].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[3].tableName
+      value: Tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 6716177157008962723, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: m_Name
@@ -6646,9 +7170,17 @@ PrefabInstance:
         \uAD00\uB9AC\uC790 C\uB77C\uACE0 \uD574!"
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[0].tableKey
+      value: tutorial00
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[1].dialogue
       value: "\uC774\uC81C\uBD80\uD130 \uB2F9\uC2E0\uC774 \uD560 \uC77C\uC740 \uCC28\uC6D0
         HUB\uB97C \uAD00\uB9AC\uD558\uB294 \uAC70\uC57C."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[1].tableKey
+      value: tutorial01
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[2].dialogue
@@ -6657,8 +7189,16 @@ PrefabInstance:
         \uC77C\uC774\uC9C0"
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[2].tableKey
+      value: tutorial02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[3].dialogue
       value: "\uC815\uD655\uD788 \uBB50\uBD80\uD130 \uD558\uBA74 \uB418\uB0D0\uACE0?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[3].tableKey
+      value: tutorial03
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[4].dialogue
@@ -6666,9 +7206,17 @@ PrefabInstance:
         \uBAA8\uB974\uB294\uAC70 \uC544\uB2C8\uC57C?"
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[4].tableKey
+      value: tutorial04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[5].dialogue
       value: "\uC88B\uC544, \uCCAB\uB0A0\uC774\uB2C8 \uBD10\uC8FC\uB3C4\uB85D \uD558\uC9C0.\n\uD55C
         \uBC88\uB9CC \uC124\uBA85\uD560 \uD14C\uB2C8 \uC798 \uB4E4\uC5B4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[5].tableKey
+      value: tutorial05
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[6].dialogue
@@ -6678,10 +7226,18 @@ PrefabInstance:
         \uAC70\uC57C."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[6].tableKey
+      value: tutorial06
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[7].dialogue
       value: "\uCC28\uC6D0\uBB38 \uAE30\uC220\uC740 \uB9E4\uC6B0 \uC12C\uC138\uD55C
         \uAD00\uB9AC\uB97C \uC694\uAD6C\uD558\uB294\n\uCD5C\uCCA8\uB2E8\uAE30\uC220
         \uC774\uC57C."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[7].tableKey
+      value: tutorial07
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[8].dialogue
@@ -6690,10 +7246,22 @@ PrefabInstance:
         \uC218 \uC788\uC5B4."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[8].tableKey
+      value: tutorial08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[9].dialogue
       value: "\uADF8\uB798\uC11C \uB2F9\uC2E0 \uAC19\uC740 \uC804\uBB38\uAC00\uB4E4\uC744
         \uCC28\uC6D0\uBB38 \uAD00\uB9AC\uB97C \uC704\uD574\n\uAC01 \uD68C\uC0AC\uC5D0
         \uD30C\uACAC\uB418\uB294\uAC70\uC57C."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[9].tableKey
+      value: tutorial09
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[0].tableName
+      value: Tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[10].dialogue
@@ -6703,8 +7271,16 @@ PrefabInstance:
         \uD558\uB294\uAC70\uC9C0."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[10].tableKey
+      value: tutorial10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[11].dialogue
       value: "\uC544\uBB34\uD2BC!  \uB2F9\uC2E0\uC774 \uD560 \uC77C\uC740 \uAC04\uB2E8\uD574."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[11].tableKey
+      value: tutorial11
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[12].dialogue
@@ -6712,13 +7288,25 @@ PrefabInstance:
         \uCC28\uC6D0\uBB38\uC73C\uB85C \uC548\uB0B4\uD55C\uB2E4."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[12].tableKey
+      value: tutorial12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[13].dialogue
       value: "2. \uAC01 \uCC28\uC6D0\uBB38\uC758 \uC815\uC6D0\uC5D0 \uB9DE\uAC8C
         \uCC28\uC6D0\uBB38\uC744 \uAC00\uB3D9\uC2DC\uD0A8\uB2E4."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[13].tableKey
+      value: tutorial13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[14].dialogue
       value: "\uB2E8!!! \uC8FC\uC758 \uD560 \uC810\uC774 \uC788\uC5B4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[14].tableKey
+      value: tutorial14
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[15].dialogue
@@ -6726,9 +7314,17 @@ PrefabInstance:
         \uB531 \uB9DE\uCDB0 \uAC00\uB3D9\uC744 \uC2DC\uCF1C\uC57C\uD574."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[15].tableKey
+      value: tutorial15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[16].dialogue
       value: "\uD55C\uBC88 \uCC28\uC6D0\uBB38\uC744 \uAC00\uB3D9\uD558\uB294\uB370
         \uBE44\uC6A9\uC774 \uB9CE\uC774 \uB4E4\uC5B4\uC11C \uB9D0\uC774\uC57C."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[16].tableKey
+      value: tutorial16
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[17].dialogue
@@ -6738,15 +7334,95 @@ PrefabInstance:
         \uC601\uD5A5\uC774 \uC788\uC744\uAC70\uC57C."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[17].tableKey
+      value: tutorial17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[18].dialogue
       value: "\uCC28\uC6D0\uBB38 \uAD00\uB9AC\uB97C \uC704\uD55C \uC790\uC138\uD55C
         \uC870\uC791\uBC95\uC740 P\uAC00 \uC54C\uB824\uC904\uAC70\uC57C.\n\uC798
         \uB4E3\uACE0 \uB530\uB77C\uD558\uAE38 \uBC14\uB77C."
       objectReference: {fileID: 0}
     - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[18].tableKey
+      value: tutorial18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: dialogs.Array.data[19].dialogue
       value: "(  \uC774\uBC88\uC5D0\uB294 \uC81C\uBC1C \uC624\uB798 \uBC84\uD168\uC8FC\uAE30\uB97C....... 
         )"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[1].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[2].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[3].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[4].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[5].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[6].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[7].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[8].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[9].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[10].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[11].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[12].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[13].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[14].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[15].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[16].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[17].tableName
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844840038607234561, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
+      propertyPath: dialogs.Array.data[18].tableName
+      value: Tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 6716177157008962723, guid: dcdc67a4f6404234d99a4350145cc774, type: 3}
       propertyPath: m_Name

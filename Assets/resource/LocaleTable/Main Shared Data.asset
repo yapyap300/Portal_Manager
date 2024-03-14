@@ -1,0 +1,352 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Main Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Main
+  m_TableCollectionNameGuidString: d1bdce0648dc502409d895d817b42899
+  m_Entries:
+  - m_Id: 116764528640
+    m_Key: managerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215641051136
+    m_Key: managerP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 808518504448
+    m_Key: idol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 989762768896
+    m_Key: writer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1027649916928
+    m_Key: boss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7725148098560
+    m_Key: event00
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16883477991424
+    m_Key: event01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17000515850240
+    m_Key: event02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17103028834304
+    m_Key: event03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17964526292992
+    m_Key: event04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18366655188992
+    m_Key: event05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18501938270208
+    m_Key: event06
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18611090837504
+    m_Key: event07
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18725670834176
+    m_Key: event08
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18814413918208
+    m_Key: event09
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19226919522304
+    m_Key: event10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19834103746560
+    m_Key: event11
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19906266746880
+    m_Key: event12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20227126808576
+    m_Key: event13
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20548070756352
+    m_Key: event14
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20672436064256
+    m_Key: event15
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24053368049664
+    m_Key: event16
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24628713312256
+    m_Key: event17
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24898016989184
+    m_Key: event18
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24969706033152
+    m_Key: event19
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25287219040256
+    m_Key: event20
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27153134866432
+    m_Key: event21
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27901990096896
+    m_Key: event22
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27998823993344
+    m_Key: event23
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28163211350016
+    m_Key: event24
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29482143797248
+    m_Key: event25
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29580386979840
+    m_Key: event26
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29791154950144
+    m_Key: event27
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30091848798208
+    m_Key: event28
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30224980201472
+    m_Key: event29
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30321533079552
+    m_Key: event30
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30397370290176
+    m_Key: event31
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30506011152384
+    m_Key: event32
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31518855876608
+    m_Key: event33
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31685826924544
+    m_Key: event34
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32191227973632
+    m_Key: event35
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32559022297088
+    m_Key: event36
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32839436685312
+    m_Key: event37
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33088150523904
+    m_Key: event38
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33285291200512
+    m_Key: event39
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33407467081728
+    m_Key: event40
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33814574616576
+    m_Key: event41
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34011891453952
+    m_Key: event42
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34258424254464
+    m_Key: event43
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34294507851776
+    m_Key: event44
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34347800678400
+    m_Key: event45
+    m_Metadata:
+      m_Items: []
+  - m_Id: 743894630617088
+    m_Key: endMoney
+    m_Metadata:
+      m_Items: []
+  - m_Id: 744456650575872
+    m_Key: endPay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 744580177022976
+    m_Key: endArea
+    m_Metadata:
+      m_Items: []
+  - m_Id: 744733189427200
+    m_Key: endPeople
+    m_Metadata:
+      m_Items: []
+  - m_Id: 745175864659968
+    m_Key: endBonus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 745858550550528
+    m_Key: endTex
+    m_Metadata:
+      m_Items: []
+  - m_Id: 746046568615936
+    m_Key: endLine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 746345798651904
+    m_Key: endTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 749423469875200
+    m_Key: upgradeCapN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 749540843278336
+    m_Key: upgradeCapDec
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750012069138432
+    m_Key: upgradeCoolN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750071032664064
+    m_Key: upgradeCoolDec
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750759561220096
+    m_Key: upgradeInfN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750814863118336
+    m_Key: upgradeInfDec
+    m_Metadata:
+      m_Items: []
+  - m_Id: 751634191044608
+    m_Key: upgradeNumN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 751708669300736
+    m_Key: upgradeNumDec
+    m_Metadata:
+      m_Items: []
+  - m_Id: 753263929806848
+    m_Key: upgradeBanN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 753326357827584
+    m_Key: upgradeBanDec
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754317455085568
+    m_Key: upgradeTimeN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754390394032128
+    m_Key: upgradeTimeDec
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755062082457600
+    m_Key: upgradeVipN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755120752381952
+    m_Key: upgradeVipDec
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755775302881280
+    m_Key: upgradeMoney
+    m_Metadata:
+      m_Items: []
+  - m_Id: 757617801908224
+    m_Key: upgradeButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 758155918528512
+    m_Key: endButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 762382225068032
+    m_Key: pauseSet1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 762691244609536
+    m_Key: pauseSet2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 765126914691072
+    m_Key: idolDec
+    m_Metadata:
+      m_Items: []
+  - m_Id: 765136997797888
+    m_Key: writerDec
+    m_Metadata:
+      m_Items: []
+  - m_Id: 765138545496064
+    m_Key: BossDec
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8235921815638376450
+  references:
+    version: 2
+    RefIds:
+    - rid: 8235921815638376450
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1710238042378

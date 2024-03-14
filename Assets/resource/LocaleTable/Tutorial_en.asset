@@ -1,0 +1,275 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Tutorial_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 7d90a01dcbde88e4381c41c4ad480eb0, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 219315261440
+    m_Localized: Hi, I'm Manager C. I sent you here!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269265227776
+    m_Localized: From now on, all you need to do is manage the HUB dimension.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281562927104
+    m_Localized: 'It''s about directing users of a portal to the correct zone '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 325758308352
+    m_Localized: What exactly should you do first?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 774943100928
+    m_Localized: 'You! Don''t you know too much,
+
+      even for an intern?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 781775622144
+    m_Localized: 'Okay, it''s your first day,
+
+      so I''ll cut you some slack.
+
+      I''m
+      only going to explain this once, so listen up.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 784975876096
+    m_Localized: "Our job is to securely manage the portals \r\nand \"transition\"
+      users to the correct zone."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 811349659648
+    m_Localized: Dimensional technology requires very delicate management.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 813358731264
+    m_Localized: "This is why it's dangerous to not follow the \r\nspecification
+      for each dimension statement can be dangerous."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 816999387136
+    m_Localized: 'That''s why we have experts like you
+
+      to manage dimensionality
+      statements.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 817678864384
+    m_Localized: "Direct users to the dimension door associated with their zone,
+      \r\nand run efficiently with the right number of people."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 818459004928
+    m_Localized: Anyway! What you need to do is simple.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 819113316352
+    m_Localized: 1. Navigate to the dimension door for the user's zone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 820363218944
+    m_Localized: 2. Enable the dimensions for each dimension's capacity.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 821025918976
+    m_Localized: But!!! A word of caution.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 821697007616
+    m_Localized: We need to run at capacity except in special cases.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 822363901952
+    m_Localized: It's expensive to run a dimension door once.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 823085322240
+    m_Localized: If you make a mistake, it will affect your performance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 823789965312
+    m_Localized: 'P will show you how to manage dimension statements.
+
+      Listen
+      carefully and follow along.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 824494608384
+    m_Localized: Hello. This is P from Dimensional Gate Technical Support.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825874534400
+    m_Localized: Let's keep it simple.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 826650480640
+    m_Localized: The symbols in the upper-right corner represent each user's zone
+      for each user.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 827392872448
+    m_Localized: Press the number keys '1' , '2' ... for each zone you are in to
+      assign the user to a dimension statement.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 828156235776
+    m_Localized: The recognition filter is working, so don't do anything to distinguish
+      it by appearance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 828881850368
+    m_Localized: 'The symbol you''re seeing is the Zone 1 symbol.
+
+      Please memorize
+      this.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 829708128256
+    m_Localized: Now let's try assigning a user by keyboard 1.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 831457153024
+    m_Localized: The indicator you see in the upper left is the current capacity
+      status of each dimension statement.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833080348672
+    m_Localized: Since we just assigned users to dimension 1,You can see that the
+      capacity has increased by one.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833772408832
+    m_Localized: 'Because the management system hasn''t been upgraded yet
+
+      we''ll
+      only be able to distinguish the approximate capacity.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 834401554432
+    m_Localized: In the future, you can upgrade to make it even easier to manage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 835072643072
+    m_Localized: Did you see the detector?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 835701788672
+    m_Localized: The detector alerts you that you are in possession of an item that
+      is prohibited.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 913892003840
+    m_Localized: If the detector sounds, don't assign the user.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 914554703872
+    m_Localized: The key to return the user without assigning them is ' X '.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 915141906432
+    m_Localized: Starting tomorrow, users with prohibited items should not be assigned
+      to the to dimension statements.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 915804606464
+    m_Localized: Naturally, if you send back a user who doesn't have any prohibited
+      items, you should no.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 916442140672
+    m_Localized: Now let's run a dimension with full capacity.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 917088063488
+    m_Localized: It should only work with full dimensions as it is now.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 917692043264
+    m_Localized: "The buttons that activate each dimension statement \nare 'A', 'S',
+      'D', and 'F' respectively."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918287634432
+    m_Localized: Right now, you're managing two dimensions.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918908391424
+    m_Localized: As you build up your experience, you'll be managing more dimension
+      statements.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 919554314240
+    m_Localized: Press 'A' to activate the full portal.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 920175071232
+    m_Localized: Well done.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 920787439616
+    m_Localized: Next, we'll navigate to the dimension statement that is over capacity.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 921412390912
+    m_Localized: "If you guide the user to a full dimension statement, the \r\nUI
+      will flicker with sound."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 922037342208
+    m_Localized: If you misguide them, your paycheck will be affected.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 922691653632
+    m_Localized: Finally, the symbols that mark each dimension statement zone are
+    m_Metadata:
+      m_Items: []
+  - m_Id: 924126105600
+    m_Localized: 'With a future upgrade
+
+      You can find out by pressing ESC to
+      check the panel.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 924805582848
+    m_Localized: That's it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926189703168
+    m_Localized: You can come in tomorrow and start managing here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13330780868608
+    m_Localized: Want to skip the tutorial?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13615121125376
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13646779731968
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700648634273792
+    m_Localized: go to work
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

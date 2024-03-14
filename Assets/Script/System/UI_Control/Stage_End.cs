@@ -1,5 +1,6 @@
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 
 public class Stage_End : MonoBehaviour
@@ -25,7 +26,7 @@ public class Stage_End : MonoBehaviour
     }
     void OnEnable()
     {
-        day.text = $"{GameManager.Instance.stageIndex}ÀÏÂ÷";
+        day.text = $"{(GameManager.Instance.stageIndex - 1) * 28 / 10 + 1}" + LocalizationSettings.StringDatabase.GetLocalizedString("Main", "endTitle", LocalizationSettings.SelectedLocale);
         ValueUpdate();
         EndPannelIn();
     }

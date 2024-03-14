@@ -2,6 +2,8 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -15,9 +17,10 @@ public class Pause_Control : MonoBehaviour
     [SerializeField] Sprite[] vipSprite;
     [SerializeField] string[] vipDescription;
     private Sequence error;
-
+    private Locale currentLocale;
     void Awake()
     {
+        currentLocale = LocalizationSettings.SelectedLocale;
         error = DOTween.Sequence();
         error.Append(errorControl[0].DOShakePosition(1,3)).Join(errorControl[1].GetComponent<Image>().DOColor(Color.red, 0.15f)
             .SetEase(Ease.Linear).SetLoops(6, LoopType.Yoyo)).SetUpdate(true).SetAutoKill(false);
@@ -57,7 +60,7 @@ public class Pause_Control : MonoBehaviour
             if (index < GameManager.Instance.vipIndex)
             {
                 vipPanel[index].GetChild(1).GetComponent<Image>().sprite = vipSprite[index];
-                vipPanel[index].GetChild(2).GetChild(0).GetComponent<Text>().text = vipDescription[index];
+                vipPanel[index].GetChild(2).GetChild(0).GetComponent<Text>().text = LocalizationSettings.StringDatabase.GetLocalizedString("Main", vipDescription[index], currentLocale);
             }
         }
     }
