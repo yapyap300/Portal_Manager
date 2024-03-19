@@ -18,7 +18,7 @@ public class Portal : MonoBehaviour
     [SerializeField] private Image waitUI;
     [SerializeField] private Text countText;
     public bool wait;
-    [SerializeField] private float waitTime;
+    [SerializeField] private int waitTime;
     [Header("Portal_Info")]
     [SerializeField] private int areaID;// 이벤트로 차원문이 담당하는 구역을 뒤바꾸기위해 필요한 변수
     [SerializeField] private int maxCount;// 점수 계산과 작동 관리를 위한 최대 정원
@@ -51,8 +51,7 @@ public class Portal : MonoBehaviour
         countPenalty = 0;
         differentPenalty= 0;
         maxCount = GameManager.Instance.maxCount;
-        waitTime = 7f - GameManager.Instance.waitTime;
-        people.Clear();
+        waitTime = 6 - GameManager.Instance.waitTime;
         wait = false;
     }
     public void EndStage()//스테이지 종료시 저장해둔 상태 변수들 전달하여 총 급여 계산에 사용
@@ -62,6 +61,13 @@ public class Portal : MonoBehaviour
         waitUI.gameObject.SetActive(false);
         wait = false;
         UI.SetActive(false);
+        foreach (int number in people)
+        {
+            if (number != areaID)
+                differentPenalty++;
+        }
+        count += people.Count;
+        people.Clear();
         GameManager.Instance.count += count;
         GameManager.Instance.countPenalty += countPenalty;
         GameManager.Instance.areaPenalty += differentPenalty;

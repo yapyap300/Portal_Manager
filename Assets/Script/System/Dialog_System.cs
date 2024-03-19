@@ -95,7 +95,7 @@ public class Dialog_System : MonoBehaviour
         while (isTyping)
         {
             SoundManager.Instance.PlayDialog(Random.Range(0.8f,2.0f));
-            yield return new WaitForSecondsRealtime(speed * 3);
+            yield return new WaitForSecondsRealtime(speed * 4);
         }
     }
 

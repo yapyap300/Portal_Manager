@@ -12,10 +12,8 @@ public class Upgrade_Description : MonoBehaviour
     private Text description;
     private Text value;
     private Text grade;
-    private Locale currentLocale;
     void Awake()
     {
-        currentLocale = LocalizationSettings.SelectedLocale;
         iconName = transform.GetChild(0).GetComponent<Text>();
         description = transform.GetChild(1).GetComponent<Text>();
         value = transform.GetChild(2).GetComponent<Text>();
@@ -32,8 +30,8 @@ public class Upgrade_Description : MonoBehaviour
         if (results[0].gameObject.CompareTag("Icon"))
         {
             Icon_Data iconData = results[0].gameObject.GetComponent<Icon_Data>();
-            iconName.text = LocalizationSettings.StringDatabase.GetLocalizedString("Main", iconData.upgradeName, currentLocale);
-            description.text = LocalizationSettings.StringDatabase.GetLocalizedString("Main", iconData.description, currentLocale);
+            iconName.text = LocalizationSettings.StringDatabase.GetLocalizedString("Main", iconData.upgradeName, GameManager.Instance.currentLocale);
+            description.text = LocalizationSettings.StringDatabase.GetLocalizedString("Main", iconData.description, GameManager.Instance.currentLocale);
             if (iconData.grade == iconData.maxGrade)
             {
                 grade.text = "Max ";

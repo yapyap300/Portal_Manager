@@ -339,6 +339,38 @@ MonoBehaviour:
     m_Key: BossDec
     m_Metadata:
       m_Items: []
+  - m_Id: 1074737542680576
+    m_Key: overButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1080429477449728
+    m_Key: win00
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1081634249330688
+    m_Key: win01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1082076345749504
+    m_Key: win02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1082763616014336
+    m_Key: win03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1082964997132288
+    m_Key: win04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1083047109021696
+    m_Key: win05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1083749436837888
+    m_Key: win06
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

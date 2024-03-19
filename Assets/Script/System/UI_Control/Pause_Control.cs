@@ -17,10 +17,8 @@ public class Pause_Control : MonoBehaviour
     [SerializeField] Sprite[] vipSprite;
     [SerializeField] string[] vipDescription;
     private Sequence error;
-    private Locale currentLocale;
     void Awake()
     {
-        currentLocale = LocalizationSettings.SelectedLocale;
         error = DOTween.Sequence();
         error.Append(errorControl[0].DOShakePosition(1,3)).Join(errorControl[1].GetComponent<Image>().DOColor(Color.red, 0.15f)
             .SetEase(Ease.Linear).SetLoops(6, LoopType.Yoyo)).SetUpdate(true).SetAutoKill(false);
@@ -60,7 +58,7 @@ public class Pause_Control : MonoBehaviour
             if (index < GameManager.Instance.vipIndex)
             {
                 vipPanel[index].GetChild(1).GetComponent<Image>().sprite = vipSprite[index];
-                vipPanel[index].GetChild(2).GetChild(0).GetComponent<Text>().text = LocalizationSettings.StringDatabase.GetLocalizedString("Main", vipDescription[index], currentLocale);
+                vipPanel[index].GetChild(2).GetChild(0).GetComponent<Text>().text = LocalizationSettings.StringDatabase.GetLocalizedString("Main", vipDescription[index], GameManager.Instance.currentLocale);
             }
         }
     }
@@ -68,7 +66,7 @@ public class Pause_Control : MonoBehaviour
     {
         if (GameManager.Instance.areaView)
         {
-            SoundManager.Instance.PlaySfx("Icon");
+            IconSound();
             areaPanel.SetActive(true);
         }
         else
@@ -80,7 +78,7 @@ public class Pause_Control : MonoBehaviour
             Error();
         else
         {
-            SoundManager.Instance.PlaySfx("Icon");
+            IconSound();
             VipInfoPanel.SetActive(true);
         }
     }
@@ -93,6 +91,10 @@ public class Pause_Control : MonoBehaviour
     {
         for(int index = 0; index < panels.Length; index++)        
             panels[index].SetActive(false);        
+    }
+    public void IconSound()
+    {
+        SoundManager.Instance.PlaySfx("Icon");
     }
     private void Error()//허용되지 않은 버튼을 누르면 실행
     {

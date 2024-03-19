@@ -26,17 +26,17 @@ public class Stage_End : MonoBehaviour
     }
     void OnEnable()
     {
-        day.text = $"{(GameManager.Instance.stageIndex - 1) * 28 / 10 + 1}" + LocalizationSettings.StringDatabase.GetLocalizedString("Main", "endTitle", LocalizationSettings.SelectedLocale);
+        day.text = $"{(GameManager.Instance.stageIndex - 1) * 28 / 9 + 1}" + LocalizationSettings.StringDatabase.GetLocalizedString("Main", "endTitle", GameManager.Instance.currentLocale);
         ValueUpdate();
         EndPannelIn();
     }
     private void ValueUpdate()
     {
         money = GameManager.Instance.money;
-        pay = GameManager.Instance.defultPay + GameManager.Instance.count * 10;
-        areaPenaltyMoney = GameManager.Instance.areaPenalty * 30;
-        countPenaltyMoney = GameManager.Instance.countPenalty * 30;
-        bonusMoney = GameManager.Instance.bonus * 500;
+        pay = GameManager.Instance.defultPay + GameManager.Instance.count * (10 + (GameManager.Instance.countless * 5));// 작동 정원을 줄이는 업그레이드를 했을때 더 이득을 볼수있게끔 받는 돈을 늘린다.
+        areaPenaltyMoney = GameManager.Instance.areaPenalty * (30 + (GameManager.Instance.countless * 5));// 대신 받는 돈을 늘린만큼 틀렸을때의 패널티도 늘린다.
+        countPenaltyMoney = GameManager.Instance.countPenalty * (30 + (GameManager.Instance.countless * 5));
+        bonusMoney = GameManager.Instance.bonus * 1000;
         result = money + pay - areaPenaltyMoney - countPenaltyMoney + bonusMoney - tex[GameManager.Instance.stageIndex];
     }
     private void EndPannelIn()

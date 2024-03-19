@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 
 public class Boss : VIP_Base
@@ -11,7 +12,7 @@ public class Boss : VIP_Base
     {
         base.OnEnable();
         number = Random.Range(1, 6);
-        description.text = $"항상 높으신 분들과 같이 옴 ({number}명)";
+        description.text = LocalizationSettings.StringDatabase.GetLocalizedString("Main", "BossDec", GameManager.Instance.currentLocale) + $"  ({number}명)";
     }
     public override bool NecessaryCondition(Portal portal)
     {

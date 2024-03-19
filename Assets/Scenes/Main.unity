@@ -301,7 +301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
       propertyPath: speed
-      value: 0.03
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
       propertyPath: images.Array.size
@@ -376,7 +376,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4863964200716635520, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
   m_PrefabInstance: {fileID: 5752199}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1845733320}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dfed158c4d3e2f4891fcbd3624b9059, type: 3}
@@ -437,7 +437,6 @@ MonoBehaviour:
   - {fileID: 1091956717}
   - {fileID: 941565503}
   - {fileID: 713300211}
-  - {fileID: 0}
   currentIndex: 0
 --- !u!1 &15363661
 GameObject:
@@ -1588,7 +1587,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2074482348}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &129482576
 MonoBehaviour:
@@ -1819,7 +1818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
       propertyPath: speed
-      value: 0.05
+      value: 0.025
       objectReference: {fileID: 0}
     - target: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
       propertyPath: images.Array.size
@@ -2656,6 +2655,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227281740}
   m_CullTransparentMesh: 1
+--- !u!1 &231695269 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635522, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 941565501}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &236355741
 GameObject:
   m_ObjectHideFlags: 0
@@ -3259,7 +3263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
       propertyPath: speed
-      value: 0.05
+      value: 0.025
       objectReference: {fileID: 0}
     - target: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
       propertyPath: images.Array.size
@@ -3396,7 +3400,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4863964200716635520, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
   m_PrefabInstance: {fileID: 260063774}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2004787996}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dfed158c4d3e2f4891fcbd3624b9059, type: 3}
@@ -3497,7 +3501,7 @@ MonoBehaviour:
   IconIndex: 0
   upgradeName: upgradeCapN
   description: upgradeCapDec
-  value: 2c01000058020000b004000060090000c0120000
+  value: f4010000e8030000d0070000a00f0000401f0000
   maxGrade: 5
   grade: 0
 --- !u!114 &261721019
@@ -4597,7 +4601,7 @@ MonoBehaviour:
   first: {fileID: 695877854}
   destination: {fileID: 1697159352}
   animator: {fileID: 303927444}
-  moveSpeed: 3.5
+  moveSpeed: 1.75
   isFirst: 1
   portalIndex: 0
   description: {fileID: 313955351}
@@ -4776,7 +4780,7 @@ MonoBehaviour:
   IconIndex: 5
   upgradeName: upgradeTimeN
   description: upgradeTimeDec
-  value: ac0d0000
+  value: c4090000
   maxGrade: 1
   grade: 0
 --- !u!114 &323860361
@@ -5169,7 +5173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5e4c48d9659aa74bb7d7e00456fe5c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winUI: {fileID: 0}
+  winUI: {fileID: 1432798476}
   upgradeUI: {fileID: 763396144}
   gameOverUI: {fileID: 2127646450}
   init:
@@ -5613,6 +5617,11 @@ MonoBehaviour:
   currentPage: 0
   maxPage: 0
   isPlay: 0
+--- !u!1 &405553825 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635522, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 1561265574}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &410403949
 GameObject:
   m_ObjectHideFlags: 0
@@ -6764,7 +6773,7 @@ MonoBehaviour:
   first: {fileID: 13144503}
   destination: {fileID: 856382395}
   animator: {fileID: 514664919}
-  moveSpeed: 2
+  moveSpeed: 1
   isFirst: 1
   portalIndex: 0
   particle: {fileID: 669598317}
@@ -7714,7 +7723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
       propertyPath: speed
-      value: 0.05
+      value: 0.025
       objectReference: {fileID: 0}
     - target: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
       propertyPath: images.Array.size
@@ -7837,7 +7846,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4863964200716635520, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
   m_PrefabInstance: {fileID: 547762913}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1012531773}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dfed158c4d3e2f4891fcbd3624b9059, type: 3}
@@ -8206,7 +8215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageEvent: {fileID: 460755124}
-  stageTime: 8
+  stageTime: 5
   portalCount: 3
   portalActive: 010101
   isMix: 0
@@ -9111,7 +9120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageEvent: {fileID: 202457184}
-  stageTime: 10
+  stageTime: 8
   portalCount: 4
   portalActive: 01010001
   isMix: 1
@@ -15772,6 +15781,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876269687}
   m_CullTransparentMesh: 1
+--- !u!1 &885132505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 885132506}
+  - component: {fileID: 885132507}
+  m_Layer: 0
+  m_Name: Fast
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &885132506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885132505}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2074482348}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &885132507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885132505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bee847cd45f84d46b960b4e510301fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 1502333831}
 --- !u!1 &898066496
 GameObject:
   m_ObjectHideFlags: 0
@@ -16263,7 +16317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageEvent: {fileID: 0}
-  stageTime: 8
+  stageTime: 6
   portalCount: 4
   portalActive: 01010101
   isMix: 1
@@ -16515,7 +16569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
       propertyPath: speed
-      value: 0.07
+      value: 0.025
       objectReference: {fileID: 0}
     - target: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
       propertyPath: images.Array.size
@@ -16655,12 +16709,62 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4863964200716635520, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
   m_PrefabInstance: {fileID: 941565501}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 231695269}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dfed158c4d3e2f4891fcbd3624b9059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &941565504 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 941565501}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231695269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b46a91798d2b904f9f684f441b5191c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &941565505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231695269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 8235921883800272910
+  references:
+    version: 2
+    RefIds:
+    - rid: 8235921883800272910
+      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 941565504}
+        m_TrackedProperties:
+          items:
+          - rid: 8235921883800272911
+        m_UpdateType: 0
+        m_Changed:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 8235921883800272911
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: speed
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: ko
+          value: 0.04
+        - localeIdentifier:
+            m_Code: en
+          value: 0.025
 --- !u!1 &948723605
 GameObject:
   m_ObjectHideFlags: 0
@@ -16706,7 +16810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageEvent: {fileID: 2074482347}
-  stageTime: 10
+  stageTime: 8
   portalCount: 4
   portalActive: 01010101
   isMix: 0
@@ -17510,6 +17614,61 @@ Transform:
   m_Father: {fileID: 1018217091}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1012531773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635522, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 547762913}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1012531774 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 547762913}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012531773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b46a91798d2b904f9f684f441b5191c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1012531775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012531773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 8235921883800272902
+  references:
+    version: 2
+    RefIds:
+    - rid: 8235921883800272902
+      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1012531774}
+        m_TrackedProperties:
+          items:
+          - rid: 8235921883800272903
+        m_UpdateType: 0
+        m_Changed:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 8235921883800272903
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: speed
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: ko
+          value: 0.05
+        - localeIdentifier:
+            m_Code: en
+          value: 0.025
 --- !u!1 &1018217090
 GameObject:
   m_ObjectHideFlags: 0
@@ -18340,7 +18499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageEvent: {fileID: 1098691169}
-  stageTime: 5
+  stageTime: 4
   portalCount: 2
   portalActive: 0101
   isMix: 1
@@ -18562,7 +18721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
       propertyPath: speed
-      value: 0.05
+      value: 0.025
       objectReference: {fileID: 0}
     - target: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
       propertyPath: images.Array.size
@@ -18705,7 +18864,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4863964200716635520, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
   m_PrefabInstance: {fileID: 1089715493}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1770431400}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dfed158c4d3e2f4891fcbd3624b9059, type: 3}
@@ -19613,10 +19772,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: PlaySfx
-        m_Mode: 5
+      - m_Target: {fileID: 241125423}
+        m_TargetAssemblyTypeName: Pause_Control, Assembly-CSharp
+        m_MethodName: IconSound
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -20063,12 +20222,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4863964200716635520, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
   m_PrefabInstance: {fileID: 173590552}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1344489903}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dfed158c4d3e2f4891fcbd3624b9059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1210107533 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635522, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 1296434023}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1215731979 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6292684181238956832, guid: 6e79a945edb42f844b5033d27c148a97, type: 3}
@@ -20576,7 +20740,7 @@ MonoBehaviour:
   waitUI: {fileID: 2018037741}
   countText: {fileID: 909166731}
   wait: 0
-  waitTime: 5
+  waitTime: 0
   areaID: 0
   maxCount: 30
   count: 0
@@ -20663,6 +20827,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260951389}
   m_CullTransparentMesh: 1
+--- !u!1 &1270365432 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635522, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 1360749045}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1274901312
 GameObject:
   m_ObjectHideFlags: 0
@@ -20867,7 +21036,7 @@ MonoBehaviour:
   first: {fileID: 1339908639}
   destination: {fileID: 898066498}
   animator: {fileID: 1285823813}
-  moveSpeed: 5
+  moveSpeed: 2.5
   isFirst: 1
   portalIndex: 0
 --- !u!61 &1285823816
@@ -21092,7 +21261,7 @@ MonoBehaviour:
   IconIndex: 4
   upgradeName: upgradeBanN
   description: upgradeBanDec
-  value: 30750000
+  value: 983a0000
   maxGrade: 1
   grade: 0
 --- !u!114 &1293238081
@@ -21755,8 +21924,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 65, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 130, y: 0}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.49999976, y: 0.5}
 --- !u!114 &1327228993
 MonoBehaviour:
@@ -21896,6 +22065,61 @@ MonoBehaviour:
   - {fileID: 1624798818}
   - {fileID: 782357567}
   currentIndex: 0
+--- !u!1 &1344489903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635522, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 173590552}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1344489904 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 173590552}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344489903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b46a91798d2b904f9f684f441b5191c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1344489905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344489903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 8235921883800272916
+  references:
+    version: 2
+    RefIds:
+    - rid: 8235921883800272916
+      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1344489904}
+        m_TrackedProperties:
+          items:
+          - rid: 8235921883800272917
+        m_UpdateType: 0
+        m_Changed:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 8235921883800272917
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: speed
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: ko
+          value: 0.05
+        - localeIdentifier:
+            m_Code: en
+          value: 0.025
 --- !u!1 &1344906919
 GameObject:
   m_ObjectHideFlags: 0
@@ -22249,12 +22473,62 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4863964200716635520, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
   m_PrefabInstance: {fileID: 1360749045}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1270365432}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dfed158c4d3e2f4891fcbd3624b9059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1360749048 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 1360749045}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270365432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b46a91798d2b904f9f684f441b5191c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1360749049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270365432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 8235921883800272912
+  references:
+    version: 2
+    RefIds:
+    - rid: 8235921883800272912
+      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1360749048}
+        m_TrackedProperties:
+          items:
+          - rid: 8235921883800272913
+        m_UpdateType: 0
+        m_Changed:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 8235921883800272913
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: speed
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: ko
+          value: 0.065
+        - localeIdentifier:
+            m_Code: en
+          value: 0.03
 --- !u!114 &1368028706 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2578909093450258866, guid: 6e79a945edb42f844b5033d27c148a97, type: 3}
@@ -22511,7 +22785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageEvent: {fileID: 0}
-  stageTime: 10
+  stageTime: 6
   portalCount: 4
   portalActive: 01010001
   isMix: 0
@@ -23527,7 +23801,8 @@ MonoBehaviour:
   - {fileID: 303927448}
   isMake: 0
   coolTime: 0
-  defultWaitTime: 60
+  defultWaitTime: 40
+  nextTime: 10
 --- !u!1 &1509641852
 GameObject:
   m_ObjectHideFlags: 0
@@ -23617,7 +23892,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -160, y: 0}
+  m_AnchoredPosition: {x: -165, y: 0}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.49999976, y: 0.5}
 --- !u!114 &1510587526
@@ -23781,7 +24056,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC8FC\uC704\uC5D0 \uC0AC\uB78C\uC774 \uB9CE\uC740 \uAC83\uC744 \uC2EB\uC5B4\uD568"
+  m_Text: 
 --- !u!222 &1529739798
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23800,7 +24075,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4863964200716635520, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
   m_PrefabInstance: {fileID: 4863964201865857123}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1810008971}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dfed158c4d3e2f4891fcbd3624b9059, type: 3}
@@ -23976,7 +24251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
       propertyPath: speed
-      value: 0.05
+      value: 0.025
       objectReference: {fileID: 0}
     - target: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
       propertyPath: images.Array.size
@@ -24185,12 +24460,62 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4863964200716635520, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
   m_PrefabInstance: {fileID: 1561265574}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 405553825}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dfed158c4d3e2f4891fcbd3624b9059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1561265577 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 1561265574}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405553825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b46a91798d2b904f9f684f441b5191c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1561265578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405553825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 8235921883800272900
+  references:
+    version: 2
+    RefIds:
+    - rid: 8235921883800272900
+      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1561265577}
+        m_TrackedProperties:
+          items:
+          - rid: 8235921883800272901
+        m_UpdateType: 0
+        m_Changed:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 8235921883800272901
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: speed
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: ko
+          value: 0.05
+        - localeIdentifier:
+            m_Code: en
+          value: 0.025
 --- !u!1 &1564969955
 GameObject:
   m_ObjectHideFlags: 0
@@ -24839,12 +25164,62 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4863964200716635520, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
   m_PrefabInstance: {fileID: 1296434023}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1210107533}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dfed158c4d3e2f4891fcbd3624b9059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1624798819 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 1296434023}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210107533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b46a91798d2b904f9f684f441b5191c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1624798820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210107533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 8235921883800272914
+  references:
+    version: 2
+    RefIds:
+    - rid: 8235921883800272914
+      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1624798819}
+        m_TrackedProperties:
+          items:
+          - rid: 8235921883800272915
+        m_UpdateType: 0
+        m_Changed:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 8235921883800272915
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: speed
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: ko
+          value: 0.065
+        - localeIdentifier:
+            m_Code: en
+          value: 0.03
 --- !u!1 &1627213306
 GameObject:
   m_ObjectHideFlags: 0
@@ -25262,7 +25637,7 @@ MonoBehaviour:
   waitUI: {fileID: 2117792822}
   countText: {fileID: 678415386}
   wait: 0
-  waitTime: 5
+  waitTime: 0
   areaID: 0
   maxCount: 30
   count: 0
@@ -26316,6 +26691,61 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1770431400 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635522, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 1089715493}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1770431401 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 1089715493}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770431400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b46a91798d2b904f9f684f441b5191c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1770431402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770431400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 8235921883800272906
+  references:
+    version: 2
+    RefIds:
+    - rid: 8235921883800272906
+      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1770431401}
+        m_TrackedProperties:
+          items:
+          - rid: 8235921883800272907
+        m_UpdateType: 0
+        m_Changed:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 8235921883800272907
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: speed
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: ko
+          value: 0.05
+        - localeIdentifier:
+            m_Code: en
+          value: 0.025
 --- !u!1 &1775362271
 GameObject:
   m_ObjectHideFlags: 0
@@ -26578,7 +27008,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 794b3c389d51a2d47991f7edfc3490e5, type: 3}
   - {fileID: 8300000, guid: be123356bc1fac047b1e1d2c99a66f0f, type: 3}
   - {fileID: 8300000, guid: 10b47434407aba7408bcf61e85c9590e, type: 3}
-  bgmVolume: 0.7
+  - {fileID: 8300000, guid: e2ddee1d4fe158c41b8f64ab7aec040d, type: 3}
+  bgmVolume: 0.6
   sfxClips:
   - {fileID: 8300000, guid: 58da43d71a974fc4e866f08b2297bf2c, type: 3}
   - {fileID: 8300000, guid: 93eef9aff1882d44aa0dbda0a8fa0d91, type: 3}
@@ -26598,8 +27029,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3908c3fec4370944483740fa6b1d767e, type: 3}
   - {fileID: 8300000, guid: f16b0d5f90894c14dac1f59a1036798d, type: 3}
   - {fileID: 8300000, guid: 29e76a5549150334ea194c188369d5a9, type: 3}
-  sfxVolume: 1.2
-  channelCount: 5
+  sfxVolume: 0.9
+  channelCount: 10
 --- !u!4 &1792629780
 Transform:
   m_ObjectHideFlags: 0
@@ -26982,6 +27413,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804938533}
   m_CullTransparentMesh: 1
+--- !u!1 &1810008971 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635522, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 4863964201865857123}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1810008972 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 4863964201865857123}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810008971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b46a91798d2b904f9f684f441b5191c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1810008973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810008971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 8235921883800272898
+  references:
+    version: 2
+    RefIds:
+    - rid: 8235921883800272898
+      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1810008972}
+        m_TrackedProperties:
+          items:
+          - rid: 8235921883800272899
+        m_UpdateType: 0
+        m_Changed:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 8235921883800272899
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: speed
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: ko
+          value: 0.05
+        - localeIdentifier:
+            m_Code: en
+          value: 0.025
 --- !u!1 &1822491729
 GameObject:
   m_ObjectHideFlags: 0
@@ -27200,6 +27686,7 @@ MonoBehaviour:
   - {fileID: 75242255}
   vipControl: {fileID: 1502333828}
   backgroundControl: {fileID: 1218691794}
+  currentLocale: {fileID: 0}
   movePeople: {fileID: 1408316862}
   portals:
   - {fileID: 1254333040}
@@ -27212,7 +27699,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4b82fe31984f67a459d92fe5f344e100, type: 3}
   - {fileID: 21300000, guid: 3a2ee2cd1c807ef47a63ed52df7efe09, type: 3}
   - {fileID: 21300000, guid: e56109774ec0ae44896f5c3a0d5e68a0, type: 3}
-  portaToArea: 00000000010000000200000003000000
+  portalToArea: 00000000010000000200000003000000
   stageIndex: 0
   time: 0
   isStop: 0
@@ -27384,11 +27871,66 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageEvent: {fileID: 1914440038}
-  stageTime: 8
+  stageTime: 5
   portalCount: 3
   portalActive: 000101
   isMix: 0
   vipIndex: 1
+--- !u!1 &1845733320 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635522, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 5752199}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1845733321 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 5752199}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845733320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b46a91798d2b904f9f684f441b5191c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1845733322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845733320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 8235921883800272908
+  references:
+    version: 2
+    RefIds:
+    - rid: 8235921883800272908
+      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1845733321}
+        m_TrackedProperties:
+          items:
+          - rid: 8235921883800272909
+        m_UpdateType: 0
+        m_Changed:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 8235921883800272909
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: speed
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: ko
+          value: 0.03
+        - localeIdentifier:
+            m_Code: en
+          value: 0.01
 --- !u!1 &1847193616
 GameObject:
   m_ObjectHideFlags: 0
@@ -28348,7 +28890,7 @@ MonoBehaviour:
   - {fileID: 611693011}
   - {fileID: 1665207094}
   next: {fileID: 1245763056}
-  tex: 000000002c010000f4010000f4010000e8030000e8030000dc050000dc050000d00700008813000000000000
+  tex: 0000000064000000c80000002c010000f4010000f4010000e8030000e8030000dc050000d007000000000000
 --- !u!1 &1946366686
 GameObject:
   m_ObjectHideFlags: 0
@@ -29200,6 +29742,61 @@ MonoBehaviour:
   currentPage: 0
   maxPage: 0
   isPlay: 0
+--- !u!1 &2004787996 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635522, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 260063774}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2004787997 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
+  m_PrefabInstance: {fileID: 260063774}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004787996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b46a91798d2b904f9f684f441b5191c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2004787998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004787996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 8235921883800272904
+  references:
+    version: 2
+    RefIds:
+    - rid: 8235921883800272904
+      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 2004787997}
+        m_TrackedProperties:
+          items:
+          - rid: 8235921883800272905
+        m_UpdateType: 0
+        m_Changed:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 8235921883800272905
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: speed
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: ko
+          value: 0.05
+        - localeIdentifier:
+            m_Code: en
+          value: 0.025
 --- !u!1 &2004852176
 GameObject:
   m_ObjectHideFlags: 0
@@ -30030,7 +30627,7 @@ MonoBehaviour:
   waitUI: {fileID: 1991378838}
   countText: {fileID: 1678594250}
   wait: 0
-  waitTime: 5
+  waitTime: 0
   areaID: 0
   maxCount: 30
   count: 0
@@ -30092,7 +30689,7 @@ MonoBehaviour:
   waitUI: {fileID: 1084933386}
   countText: {fileID: 2076821549}
   wait: 0
-  waitTime: 5
+  waitTime: 0
   areaID: 0
   maxCount: 30
   count: 0
@@ -30130,6 +30727,7 @@ Transform:
   m_Children:
   - {fileID: 126370521}
   - {fileID: 260063775}
+  - {fileID: 885132506}
   - {fileID: 129482575}
   m_Father: {fileID: 275894229}
   m_RootOrder: 4
@@ -30149,6 +30747,7 @@ MonoBehaviour:
   flows:
   - {fileID: 126370522}
   - {fileID: 260063776}
+  - {fileID: 885132507}
   - {fileID: 129482576}
   currentIndex: 0
 --- !u!1 &2076821547
@@ -30400,7 +30999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageEvent: {fileID: 0}
-  stageTime: 5
+  stageTime: 4
   portalCount: 3
   portalActive: 010101
   isMix: 0
@@ -30861,6 +31460,7 @@ GameObject:
   - component: {fileID: 2141232843}
   - component: {fileID: 2141232845}
   - component: {fileID: 2141232844}
+  - component: {fileID: 2141232846}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -30921,7 +31521,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uACFC\uAC70\uB85C \uB3CC\uC544\uAC00\uAE30"
+  m_Text: 
 --- !u!222 &2141232845
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30930,6 +31530,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141232842}
   m_CullTransparentMesh: 1
+--- !u!114 &2141232846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141232842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:d1bdce0648dc502409d895d817b42899
+    m_TableEntryReference:
+      m_KeyId: 1074737542680576
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2141232844}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &2141606005
 GameObject:
   m_ObjectHideFlags: 0
@@ -31690,7 +32330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
       propertyPath: speed
-      value: 0.05
+      value: 0.025
       objectReference: {fileID: 0}
     - target: {fileID: 4863964200716635527, guid: eec52abcb84288a4ab76097458c9af94, type: 3}
       propertyPath: images.Array.size

@@ -42,7 +42,7 @@ public class Kickout : MonoBehaviour
                 if (hit)
                 {
                     People currentUser = hit.transform.GetComponent<People>();
-                    if (!currentUser.isBan && GameManager.Instance.portals[GameManager.Instance.portaToArea[currentUser.area]].gameObject.activeSelf)//구역과 연결된 차원문의 인덱싱을 추가하여 뒤섞임과 비활성 이벤트도 같이 가능하다.
+                    if (!currentUser.isBan && GameManager.Instance.portals[GameManager.Instance.portalToArea[currentUser.area]].gameObject.activeSelf)//구역과 연결된 차원문의 인덱싱을 추가하여 뒤섞임과 비활성 이벤트도 같이 가능하다.
                     {
                         SoundManager.Instance.PlaySfx("Error");
                         banPenalty++;

@@ -27,14 +27,14 @@ public class Stage_Upgrade : MonoBehaviour
     private void Init()
     {
         money = GameManager.Instance.endMoney;
-        currentMoney.text = $"{money:N0}¿ø";
+        currentMoney.text = $"{money:N0}";
         for(int index = 0; index < iconDatas.Length; index++)
         {            
             iconDatas[index].GetComponent<Button>().interactable = iconDatas[index].grade < iconDatas[index].maxGrade;
             if (iconDatas[index].grade == iconDatas[index].maxGrade)
                 upgradeValues[index].text = "";
             else
-                upgradeValues[index].text = $"{iconDatas[index].value[iconDatas[index].grade]:N0}¿ø";
+                upgradeValues[index].text = $"{iconDatas[index].value[iconDatas[index].grade]:N0}";
         }
         if(GameManager.Instance.vipIndex > 0)
             iconDatas[6].gameObject.SetActive(true);
@@ -52,7 +52,7 @@ public class Stage_Upgrade : MonoBehaviour
             money -= clickObject.value[clickObject.grade];
             clickObject.GetComponent<Button>().interactable = false;
             upgradeValues[clickObject.IconIndex].text = "";
-            currentMoney.text = $"{money:N0}¿ø";
+            currentMoney.text = $"{money:N0}";
             clickObject.grade++;
         }
     }

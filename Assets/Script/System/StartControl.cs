@@ -3,14 +3,18 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class StartControl : MonoBehaviour
 {
+    [SerializeField] private Text localeText;
     [SerializeField] private Vector3 startPosition;
     [SerializeField] private Transform[] people;
     private Vector3 plus = new Vector3(5, 0, 0);
     private Animator[] Animators;
+    private int localeIndex = 0;
     void Awake()
     {
         startPosition = new Vector3(-12, 0, 0);
@@ -32,6 +36,7 @@ public class StartControl : MonoBehaviour
     }
     public void StartGame()
     {
+        DOTween.KillAll();
         SoundManager.Instance.StopBGM();
         SceneManager.LoadScene(1);
     }
@@ -42,6 +47,14 @@ public class StartControl : MonoBehaviour
     public void PointSound()
     {
         SoundManager.Instance.PlaySfx("Swap");
+    }
+    public void ChangeLocale()
+    {
+        if (localeIndex == 0)
+            localeText.text = "En";
+        else
+            localeText.text = "Ko";
+        StartCoroutine(Change(localeIndex = 1 - localeIndex));
     }
     IEnumerator Play()
     {
@@ -59,5 +72,10 @@ public class StartControl : MonoBehaviour
                 Animators[index].SetBool("Walk", false);
             }
         }
+    }
+    IEnumerator Change(int index)
+    {
+        yield return LocalizationSettings.InitializationOperation;
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
     }
 }

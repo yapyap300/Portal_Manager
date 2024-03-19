@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -11,12 +13,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject endFlow;//스테이지 끝날때 활성화시킬 흐름
     [SerializeField] private Stage_Data[] stages;
     [SerializeField] private GameObject vipControl;
-    [SerializeField] private GameObject backgroundControl;    
+    [SerializeField] private GameObject backgroundControl;
+    public Locale currentLocale;
     public People_Control movePeople;
     public Portal[] portals;
     public Kickout kickout;
     public Sprite[] areaSprites;//각 구역의 문양을 순서대로 가지고 있어서 다른 곳에서 참조하게 한다.
-    public int[] portaToArea;
+    public int[] portalToArea;
     public int stageIndex;
     public float time; 
     public bool isStop;
@@ -67,6 +70,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        currentLocale = LocalizationSettings.SelectedLocale;
         Stop();
         StageInit();
         Resume();
@@ -147,6 +151,7 @@ public class GameManager : MonoBehaviour
                 portals[index].EndStage();
             portals[index].gameObject.SetActive(false);
             portalArea[index] = index;
+            portalToArea[index] = index;
         }
         countPenalty += kickout.banPenalty;
         kickout.gameObject.SetActive(false);
@@ -168,7 +173,7 @@ public class GameManager : MonoBehaviour
             if (list.Count > 1 && area == index) continue;//랜덤을 섞을때 같은 구역이 나오면 다시 뽑기 대신 마지막 차원문의 랜덤값을 정할때는 남는 구역번호가 본인번호일수 있어서 그냥 바로 넣는다.            
             list.Remove(area);
             portalArea[index] = area;
-            portaToArea[area] = index++;//각 차원문에 담당 구역을 전해줫다면 각 구역에 연결된 차원문의 인덱스도 따로 저장 이유는 뒤섞임과 비활성화가 같이 됐을때 이용하려고 한다.            
+            portalToArea[area] = index++;//각 차원문에 담당 구역을 전해줫다면 각 구역에 연결된 차원문의 인덱스도 따로 저장 이유는 뒤섞임과 비활성화가 같이 됐을때 이용하려고 한다.            
         }
     }
 }

@@ -21,6 +21,7 @@ public class Flow_Zoom : Flow_Base
 
     public override void Exit()
     {
-
+        if(!isIn)
+            vip.updateMode = 0;
     }
 }

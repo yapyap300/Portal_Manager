@@ -29,7 +29,7 @@ public abstract class VIP_Base : MonoBehaviour
     {
         animator.SetBool("Walk",true);
         transform.DOMove(position, moveSpeed).SetEase(Ease.Linear)
-            .OnComplete(() => { animator.SetBool("Walk", false); if (isFirst) { first.SetActive(true); isFirst = false; } gameObject.SetActive(active); });
+            .OnComplete(() => { animator.SetBool("Walk", false); if (isFirst) { first.SetActive(true); isFirst = false;} gameObject.SetActive(active); });
     }
     public abstract void PlayEventSound();
     public abstract bool NecessaryCondition(Portal portal);//vip들의 진입 조건 확인

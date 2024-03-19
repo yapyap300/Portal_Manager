@@ -23,7 +23,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 269265227776
-    m_Localized: From now on, all you need to do is manage the HUB dimension.
+    m_Localized: From now on, all you need to do is manage the portal HUB.
     m_Metadata:
       m_Items: []
   - m_Id: 281562927104
@@ -60,19 +60,18 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 813358731264
     m_Localized: "This is why it's dangerous to not follow the \r\nspecification
-      for each dimension statement can be dangerous."
+      for each portal can be dangerous."
     m_Metadata:
       m_Items: []
   - m_Id: 816999387136
     m_Localized: 'That''s why we have experts like you
 
-      to manage dimensionality
-      statements.'
+      to manage portals.'
     m_Metadata:
       m_Items: []
   - m_Id: 817678864384
-    m_Localized: "Direct users to the dimension door associated with their zone,
-      \r\nand run efficiently with the right number of people."
+    m_Localized: "Direct users to the portal associated with their zone, \r\nand
+      run efficiently with the right number of people."
     m_Metadata:
       m_Items: []
   - m_Id: 818459004928
@@ -80,11 +79,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 819113316352
-    m_Localized: 1. Navigate to the dimension door for the user's zone.
+    m_Localized: 1. Navigate to the portal for the user's zone.
     m_Metadata:
       m_Items: []
   - m_Id: 820363218944
-    m_Localized: 2. Enable the dimensions for each dimension's capacity.
+    m_Localized: 2. Enable the dimensions for each portal's capacity.
     m_Metadata:
       m_Items: []
   - m_Id: 821025918976
@@ -96,7 +95,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 822363901952
-    m_Localized: It's expensive to run a dimension door once.
+    m_Localized: It's expensive to run a portal once.
     m_Metadata:
       m_Items: []
   - m_Id: 823085322240
@@ -104,14 +103,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 823789965312
-    m_Localized: 'P will show you how to manage dimension statements.
+    m_Localized: 'P will show you how to manage portal.
 
-      Listen
-      carefully and follow along.'
+      Listen carefully and
+      follow along.'
     m_Metadata:
       m_Items: []
   - m_Id: 824494608384
-    m_Localized: Hello. This is P from Dimensional Gate Technical Support.
+    m_Localized: Hello. This is P from portal Technical Support.
     m_Metadata:
       m_Items: []
   - m_Id: 825874534400
@@ -125,7 +124,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 827392872448
     m_Localized: Press the number keys '1' , '2' ... for each zone you are in to
-      assign the user to a dimension statement.
+      assign the user to a portal.
     m_Metadata:
       m_Items: []
   - m_Id: 828156235776
@@ -146,12 +145,12 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 831457153024
     m_Localized: The indicator you see in the upper left is the current capacity
-      status of each dimension statement.
+      status of each portal.
     m_Metadata:
       m_Items: []
   - m_Id: 833080348672
-    m_Localized: Since we just assigned users to dimension 1,You can see that the
-      capacity has increased by one.
+    m_Localized: Since we just assigned users to portal 1,You can see that the capacity
+      has increased by one.
     m_Metadata:
       m_Items: []
   - m_Id: 833772408832
@@ -184,7 +183,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 915141906432
     m_Localized: Starting tomorrow, users with prohibited items should not be assigned
-      to the to dimension statements.
+      to the to portal.
     m_Metadata:
       m_Items: []
   - m_Id: 915804606464
@@ -193,25 +192,24 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 916442140672
-    m_Localized: Now let's run a dimension with full capacity.
+    m_Localized: Now let's run a portal with full capacity.
     m_Metadata:
       m_Items: []
   - m_Id: 917088063488
-    m_Localized: It should only work with full dimensions as it is now.
+    m_Localized: It should only work with full portal as it is now.
     m_Metadata:
       m_Items: []
   - m_Id: 917692043264
-    m_Localized: "The buttons that activate each dimension statement \nare 'A', 'S',
-      'D', and 'F' respectively."
+    m_Localized: "The buttons that activate each portal \nare 'A', 'S', 'D', and
+      'F' respectively."
     m_Metadata:
       m_Items: []
   - m_Id: 918287634432
-    m_Localized: Right now, you're managing two dimensions.
+    m_Localized: Right now, you're managing two portals.
     m_Metadata:
       m_Items: []
   - m_Id: 918908391424
-    m_Localized: As you build up your experience, you'll be managing more dimension
-      statements.
+    m_Localized: As you build up your experience, you'll be managing more portals.
     m_Metadata:
       m_Items: []
   - m_Id: 919554314240
@@ -223,12 +221,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 920787439616
-    m_Localized: Next, we'll navigate to the dimension statement that is over capacity.
+    m_Localized: Next, we'll navigate to the portal that is over capacity.
     m_Metadata:
       m_Items: []
   - m_Id: 921412390912
-    m_Localized: "If you guide the user to a full dimension statement, the \r\nUI
-      will flicker with sound."
+    m_Localized: "If you guide the user to a full portal, the \r\nUI will flicker
+      with sound."
     m_Metadata:
       m_Items: []
   - m_Id: 922037342208
@@ -236,7 +234,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 922691653632
-    m_Localized: Finally, the symbols that mark each dimension statement zone are
+    m_Localized: Finally, the symbols that mark each portal zone are
     m_Metadata:
       m_Items: []
   - m_Id: 924126105600

@@ -44,16 +44,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 16883477991424
-    m_Localized: An anomaly has been detected in the dimension gate system.
+    m_Localized: An anomaly has been detected in the portal system.
     m_Metadata:
       m_Items: []
   - m_Id: 17000515850240
-    m_Localized: The twisting of the regions connected with each dimension gate.
+    m_Localized: The twisting of the regions connected with each portal.
     m_Metadata:
       m_Items: []
   - m_Id: 17103028834304
-    m_Localized: Please note that all dimension gates are now connected to the opposite
-      zone as before.
+    m_Localized: Please note that all portals are now connected to the opposite zone
+      as before.
     m_Metadata:
       m_Items: []
   - m_Id: 17964526292992
@@ -80,19 +80,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18814413918208
-    m_Localized: We need to make sure that the area display connected with the dimension
-      gate that the VIPs will be using.
+    m_Localized: We need to make sure that the area display connected with the portal
+      that the VIPs will be using.
     m_Metadata:
       m_Items: []
   - m_Id: 19226919522304
     m_Localized: 'Now that you have the tablet''s demographics down, you can verify
-      them, match the conditions
+      them, match the Request
 
       and press the ''V'' key to guide them.'
     m_Metadata:
       m_Items: []
   - m_Id: 19834103746560
-    m_Localized: You must follow the conditions.
+    m_Localized: You must follow the Request.
     m_Metadata:
       m_Items: []
   - m_Id: 19906266746880
@@ -124,16 +124,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 24898016989184
-    m_Localized: We need to close dimension gate 1 for maintenance for the day.
+    m_Localized: We need to close 1st portal for maintenance for the day.
     m_Metadata:
       m_Items: []
   - m_Id: 24969706033152
-    m_Localized: Please apologize to users heading to the 1st dimension gate and
-      send them back.
+    m_Localized: Please apologize to users heading to the 1st portal and send them
+      back.
     m_Metadata:
       m_Items: []
   - m_Id: 25287219040256
-    m_Localized: Hey, it's been a while, haha.
+    m_Localized: Hey! it's been a while, haha.
     m_Metadata:
       m_Items: []
   - m_Id: 27153134866432
@@ -263,7 +263,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 744733189427200
-    m_Localized: HeadCount Error
+    m_Localized: People Error
     m_Metadata:
       m_Items: []
   - m_Id: 745175864659968
@@ -285,11 +285,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 749423469875200
-    m_Localized: Reduce Capacity
+    m_Localized: Reduce Working Capacity
     m_Metadata:
       m_Items: []
   - m_Id: 749540843278336
-    m_Localized: Reduces the capacity of a dimension gate.
+    m_Localized: Reduces the working capacity of portals. (3 people)
     m_Metadata:
       m_Items: []
   - m_Id: 750012069138432
@@ -297,7 +297,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 750071032664064
-    m_Localized: Reduces the cooldown of dimension gate.
+    m_Localized: Reduces the cooldown of portals. (1sec)
     m_Metadata:
       m_Items: []
   - m_Id: 750759561220096
@@ -305,15 +305,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 750814863118336
-    m_Localized: You can see the areas connected to each dimension gate.
+    m_Localized: You can see the areas connected to each portal.
     m_Metadata:
       m_Items: []
   - m_Id: 751634191044608
-    m_Localized: Show dimension gate headcount
+    m_Localized: Show portal people
     m_Metadata:
       m_Items: []
   - m_Id: 751708669300736
-    m_Localized: Displays the current headcount for the dimension gate.
+    m_Localized: Displays the current people for the portal.
     m_Metadata:
       m_Items: []
   - m_Id: 753263929806848
@@ -361,15 +361,47 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 765126914691072
-    m_Localized: Doesn't like to be around a lot of people
+    m_Localized: Doesn't like to be around people
     m_Metadata:
       m_Items: []
   - m_Id: 765136997797888
-    m_Localized: Want a dimension gate that is 'full' of people
+    m_Localized: Want a portal that is 'full' of people
     m_Metadata:
       m_Items: []
   - m_Id: 765138545496064
     m_Localized: Always come with someone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1074737542680576
+    m_Localized: Retry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1080429477449728
+    m_Localized: Total income
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1081634249330688
+    m_Localized: Penalty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1082076345749504
+    m_Localized: VIP management
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1082763616014336
+    m_Localized: Game Over
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1082964997132288
+    m_Localized: Savings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1083047109021696
+    m_Localized: Total Score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1083749436837888
+    m_Localized: Evaluate your final performance.
     m_Metadata:
       m_Items: []
   references:
