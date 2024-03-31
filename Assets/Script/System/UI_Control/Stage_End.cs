@@ -25,8 +25,8 @@ public class Stage_End : MonoBehaviour
             .Append(DOVirtual.DelayedCall(1f, () => { TextActive(6); next.interactable = true;})).SetUpdate(true).SetAutoKill(false).Pause();
     }
     void OnEnable()
-    {
-        day.text = $"{(GameManager.Instance.stageIndex - 1) * 28 / 9 + 1}" + LocalizationSettings.StringDatabase.GetLocalizedString("Main", "endTitle", GameManager.Instance.currentLocale);
+    {   //스테이지를 1일부터 10일로하면 흐름상 이상해서 1부터 10을 1부터 30에 맞추는 계산식을 사용함
+        day.text = $"{(int)((GameManager.Instance.stageIndex - 1) * (29f / 9f) + 1)}" + LocalizationSettings.StringDatabase.GetLocalizedString("Main", "endTitle", GameManager.Instance.currentLocale);
         ValueUpdate();
         EndPannelIn();
     }
@@ -37,14 +37,14 @@ public class Stage_End : MonoBehaviour
         areaPenaltyMoney = GameManager.Instance.areaPenalty * (30 + (GameManager.Instance.countless * 5));// 대신 받는 돈을 늘린만큼 틀렸을때의 패널티도 늘린다.
         countPenaltyMoney = GameManager.Instance.countPenalty * (30 + (GameManager.Instance.countless * 5));
         bonusMoney = GameManager.Instance.bonus * 1000;
-        result = money + pay - areaPenaltyMoney - countPenaltyMoney + bonusMoney - tex[GameManager.Instance.stageIndex];
+        result = money + pay + areaPenaltyMoney + countPenaltyMoney + bonusMoney - tex[GameManager.Instance.stageIndex];
     }
     private void EndPannelIn()
     {
         moneyTexts[0].text = $"{money:N0}";
         moneyTexts[1].text = $"{pay:N0}";
-        moneyTexts[2].text = $"-{areaPenaltyMoney:N0}";
-        moneyTexts[3].text = $"-{countPenaltyMoney:N0}";
+        moneyTexts[2].text = $"{areaPenaltyMoney:N0}";
+        moneyTexts[3].text = $"{countPenaltyMoney:N0}";
         moneyTexts[4].text = $"{bonusMoney:N0}";
         moneyTexts[5].text = $"-{tex[GameManager.Instance.stageIndex]:N0}";
         moneyTexts[6].text = $"{result:N0}";

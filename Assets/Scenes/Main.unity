@@ -4780,7 +4780,7 @@ MonoBehaviour:
   IconIndex: 5
   upgradeName: upgradeTimeN
   description: upgradeTimeDec
-  value: c4090000
+  value: b80b0000
   maxGrade: 1
   grade: 0
 --- !u!114 &323860361
@@ -8215,7 +8215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageEvent: {fileID: 460755124}
-  stageTime: 5
+  stageTime: 6
   portalCount: 3
   portalActive: 010101
   isMix: 0
@@ -9120,7 +9120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageEvent: {fileID: 202457184}
-  stageTime: 8
+  stageTime: 9
   portalCount: 4
   portalActive: 01010001
   isMix: 1
@@ -16317,7 +16317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageEvent: {fileID: 0}
-  stageTime: 6
+  stageTime: 7
   portalCount: 4
   portalActive: 01010101
   isMix: 1
@@ -16810,7 +16810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageEvent: {fileID: 2074482347}
-  stageTime: 8
+  stageTime: 9
   portalCount: 4
   portalActive: 01010101
   isMix: 0
@@ -20297,8 +20297,8 @@ SpriteRenderer:
   m_SortingLayerID: 1833061739
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1031149c8ab2eb14a889d3226cac42b3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 18362ffde6010164d98ddc8492759d0d, type: 3}
+  m_Color: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22785,7 +22785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageEvent: {fileID: 0}
-  stageTime: 6
+  stageTime: 7
   portalCount: 4
   portalActive: 01010001
   isMix: 0
@@ -23801,7 +23801,7 @@ MonoBehaviour:
   - {fileID: 303927448}
   isMake: 0
   coolTime: 0
-  defultWaitTime: 40
+  defultWaitTime: 50
   nextTime: 10
 --- !u!1 &1509641852
 GameObject:
@@ -27871,7 +27871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageEvent: {fileID: 1914440038}
-  stageTime: 5
+  stageTime: 6
   portalCount: 3
   portalActive: 000101
   isMix: 0
@@ -28258,7 +28258,7 @@ MonoBehaviour:
   IconIndex: 3
   upgradeName: upgradeNumN
   description: upgradeNumDec
-  value: 94110000
+  value: 88130000
   maxGrade: 1
   grade: 0
 --- !u!114 &1860565386
@@ -28890,7 +28890,7 @@ MonoBehaviour:
   - {fileID: 611693011}
   - {fileID: 1665207094}
   next: {fileID: 1245763056}
-  tex: 0000000064000000c80000002c010000f4010000f4010000e8030000e8030000dc050000d007000000000000
+  tex: 000000002c010000f401000020030000e8030000e8030000dc050000dc050000d0070000b80b000000000000
 --- !u!1 &1946366686
 GameObject:
   m_ObjectHideFlags: 0

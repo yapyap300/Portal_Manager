@@ -23,7 +23,7 @@ public class Boss : VIP_Base
 
     public override void Process()
     {
-        GameManager.Instance.countPenalty -= number;
+        GameManager.Instance.countPenalty += number;
     }
 
     public override void PlayEventSound()

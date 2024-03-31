@@ -20,12 +20,12 @@ public class GameWin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        scores[0] = GameManager.Instance.totalPay + GameManager.Instance.money;
+        scores[0] = GameManager.Instance.totalPay;
         scores[1] = GameManager.Instance.wrongArea + GameManager.Instance.wrongCount;
-        scores[2] = GameManager.Instance.vipCount;
+        scores[2] = GameManager.Instance.vipScore;
         scores[3] = GameManager.Instance.gameoverCount;
         scores[4] = GameManager.Instance.endMoney;
-        scores[5] = scores[0] - (scores[1] * 30) + (scores[2] * 1000) - (scores[3] * 10000) + (scores[4] * 10);
+        scores[5] = (scores[0] / 10) - (scores[1] * 30) + (scores[2] * 1000) - (scores[3] * 3000) + (scores[4] * 10);
         texts[0] = LocalizationSettings.StringDatabase.GetLocalizedString("Main", "win00", GameManager.Instance.currentLocale);
         texts[1] = LocalizationSettings.StringDatabase.GetLocalizedString("Main", "win01", GameManager.Instance.currentLocale) + $" ( {scores[1]} )";
         texts[2] = LocalizationSettings.StringDatabase.GetLocalizedString("Main", "win02", GameManager.Instance.currentLocale) + $" ( {scores[2]} )";
@@ -34,9 +34,9 @@ public class GameWin : MonoBehaviour
         texts[5] = LocalizationSettings.StringDatabase.GetLocalizedString("Main", "win05", GameManager.Instance.currentLocale);
         int index = 0;
         DOTween.Sequence().Append(main.DOText(LocalizationSettings.StringDatabase.GetLocalizedString("Main", "win06", GameManager.Instance.currentLocale), 2f)
-            .SetEase(Ease.Linear)).Append(panel.DOFade(1, 2f)).Append(ScoreActive(index, scores[index], texts[index++]))
+            .SetEase(Ease.Linear)).Append(panel.DOFade(1, 2f)).Append(ScoreActive(index, scores[index] / 10, texts[index++]))
             .Append(ScoreActive(index, scores[index] * -30, texts[index++])).Append(ScoreActive(index, scores[index] * 1000, texts[index++]))
-            .Append(ScoreActive(index, scores[index] * -10000, texts[index++])).Append(ScoreActive(index, scores[index] * 10, texts[index++])).Append(ScoreActive(index, scores[index], texts[index++]))
+            .Append(ScoreActive(index, scores[index] * -3000, texts[index++])).Append(ScoreActive(index, scores[index] * 10, texts[index++])).Append(ScoreActive(index, scores[index], texts[index++]))
             .Join(inPanel.DOFade(1f,0.5f)).SetUpdate(true).OnComplete(() => exit.interactable = true);
     }
 

@@ -13,7 +13,7 @@ public class Idol : VIP_Base
     }
     public override void Process()
     {
-        GameManager.Instance.countPenalty -= GameManager.Instance.maxCount;
+        GameManager.Instance.countPenalty += GameManager.Instance.maxCount;
     }
     public void PlayParticle()
     {

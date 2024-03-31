@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     public int wrongCount;
     public int wrongArea;
     public int totalPay;
-    public int vipCount;
+    public int vipScore;
     public int gameoverCount;
     [Header("# Stage Event Info")]
     public bool isMix;
@@ -153,14 +153,14 @@ public class GameManager : MonoBehaviour
             portalArea[index] = index;
             portalToArea[index] = index;
         }
-        countPenalty += kickout.banPenalty;
+        countPenalty -= kickout.banPenalty;
         kickout.gameObject.SetActive(false);
         if(vipControl.activeSelf)
             vipControl.SetActive(false);
         backgroundControl.SetActive(false);
-        wrongCount += countPenalty;
-        wrongArea += areaPenalty;
-        vipCount += bonus;
+        wrongCount += -countPenalty; //틀린 인원수 최종 점수계산변수에 저장
+        wrongArea += -areaPenalty;// 구역 잘못 넣은 수
+        vipScore += bonus;// vip점수
     }
     public void RandomArea()//스테이지 인덱스 랜덤
     {

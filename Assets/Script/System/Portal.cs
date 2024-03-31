@@ -69,8 +69,8 @@ public class Portal : MonoBehaviour
         count += people.Count;
         people.Clear();
         GameManager.Instance.count += count;
-        GameManager.Instance.countPenalty += countPenalty;
-        GameManager.Instance.areaPenalty += differentPenalty;
+        GameManager.Instance.countPenalty -= countPenalty;
+        GameManager.Instance.areaPenalty -= differentPenalty;
     }
     private void Work()//차원문이 작동할때마다 현재 상태에 따른 수치 변화 기록
     {
@@ -103,10 +103,16 @@ public class Portal : MonoBehaviour
                     else
                     {
                         if (hit.transform.GetComponent<People>().isBan)
+                        {
+                            SoundManager.Instance.PlaySfx("Error");
                             countPenalty++;
-                        GameManager.Instance.defultPay += 5;
-                        people.Add(hit.transform.GetComponent<People>().area);
-                        SoundManager.Instance.PlaySfx("Entry");                        
+                        }
+                        else
+                        {
+                            GameManager.Instance.defultPay += 5;
+                            people.Add(hit.transform.GetComponent<People>().area);
+                            SoundManager.Instance.PlaySfx("Entry");
+                        }
                     }                    
                 }
             }
