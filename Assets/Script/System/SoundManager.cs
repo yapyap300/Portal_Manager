@@ -130,9 +130,5 @@ public class SoundManager : MonoBehaviour
     public void StopBGM()
     {
         bgmPlayer.Pause();
-    }
-    public void Volume(float sliderValue)
-    {
-        audioMixer.SetFloat("Master", Mathf.Log10(sliderValue) * 10);
-    }
+    }    
 }

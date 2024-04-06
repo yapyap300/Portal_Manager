@@ -58,7 +58,7 @@ public class VIP_Control : MonoBehaviour
         while (true)
         {
             yield return null;
-            if (Input.GetKeyDown(KeyCode.V) && !GameManager.Instance.portals[targetIndex].wait)
+            if (!GameManager.Instance.isStop && Input.GetKeyDown(KeyCode.V) && !GameManager.Instance.portals[targetIndex].wait)
             {
                 hit = Physics2D.Raycast(transform.position, Vector2.zero, 0, vipLayer);
                 if (hit)

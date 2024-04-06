@@ -36,7 +36,7 @@ public class Kickout : MonoBehaviour
         while (true)
         {
             yield return null;
-            if (Input.GetKeyDown(KeyCode.X))
+            if (!GameManager.Instance.isStop && Input.GetKeyDown(KeyCode.X))
             {
                 hit = Physics2D.Raycast(transform.position, Vector2.zero, 0, people); // 마지막 위치로 사람이 이동하기 전에는 눌러도 반응하지 않게 하기위해 레이캐스트 이용
                 if (hit)

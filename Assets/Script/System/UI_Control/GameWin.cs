@@ -48,6 +48,7 @@ public class GameWin : MonoBehaviour
     }
     public void GameExit()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
 }

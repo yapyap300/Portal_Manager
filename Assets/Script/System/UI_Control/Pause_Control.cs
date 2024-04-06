@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
@@ -16,6 +17,7 @@ public class Pause_Control : MonoBehaviour
     [SerializeField] Transform[] errorControl;//그냥 연출용
     [SerializeField] Sprite[] vipSprite;
     [SerializeField] string[] vipDescription;
+    [SerializeField] AudioMixer audioMixer;
     private Sequence error;
     void Awake()
     {
@@ -85,6 +87,7 @@ public class Pause_Control : MonoBehaviour
     public void QuitGame()
     {
         SoundManager.Instance.StopBGM();
+        Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
     private void Open()
@@ -100,5 +103,9 @@ public class Pause_Control : MonoBehaviour
     {
         SoundManager.Instance.PlaySfx("Bip");
         error.Restart();
+    }
+    public void Volume(Slider slider)
+    {
+        audioMixer.SetFloat("Master", Mathf.Log10(slider.value) * 10);
     }
 }
