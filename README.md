@@ -14,9 +14,9 @@ Unity 3D, C#
 
 ## 플레이 영상
 
+[YouTube](https://youtu.be/N3ULJtdpXcs)
 
-
-### 게임 플레이 화면
+## 게임 플레이 화면
 
 ![시작화면](https://github.com/user-attachments/assets/b77948b2-b1ba-4458-83aa-6b3c837130ef)
 ![스테이지 중간](https://github.com/user-attachments/assets/5f8ba14c-3a4e-459d-aad0-e55fca444e6e)
@@ -27,4 +27,3 @@ Unity 3D, C#
 
 ## 플레이 방법 및 간단한 설명
 [itch.io 주소](https://yapyap300.itch.io/portal-manager)
-
