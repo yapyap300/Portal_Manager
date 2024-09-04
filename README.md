@@ -29,6 +29,6 @@ Unity 2D, C#
 [itch.io 주소](https://yapyap300.itch.io/portal-manager)
 
 ## 리소스 출처
-[Complete_UI_Essential_Pack](https://crusenho.itch.io/complete-ui-essential-pack)
-[Modern City Backgrounds Pixel Art](https://free-game-assets.itch.io/free-city-backgrounds-pixel-art)
-[mp_character_animation_asset_pack](https://muchopixels.itch.io/character-animation-asset-pack)
+UI : [Complete_UI_Essential_Pack](https://crusenho.itch.io/complete-ui-essential-pack)
+배경 : [Modern City Backgrounds Pixel Art](https://free-game-assets.itch.io/free-city-backgrounds-pixel-art)
+캐릭터 디자인 : [mp_character_animation_asset_pack](https://muchopixels.itch.io/character-animation-asset-pack)
