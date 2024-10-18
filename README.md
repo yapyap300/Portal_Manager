@@ -15,7 +15,12 @@ Unity 2D, C#
 ## 플레이 영상
 
 [YouTube](https://youtu.be/N3ULJtdpXcs)
-
+## 등장 인물
+![P](https://github.com/user-attachments/assets/a7b7269c-f62f-4cc4-bfce-5f45bff942d2)
+![C](https://github.com/user-attachments/assets/a188eadf-b859-464f-8f00-ba8be8fb5e81)
+![Boss](https://github.com/user-attachments/assets/d2b3b175-1187-4225-9fae-30cf8b5251ab)
+![Idol](https://github.com/user-attachments/assets/1eb43b7f-3657-4f2a-81d5-f4e53068aae2)
+![Writer](https://github.com/user-attachments/assets/bf046595-6d2d-450c-a45a-2d15720e3006)
 ## 게임 플레이 화면
 
 ![시작화면](https://github.com/user-attachments/assets/b77948b2-b1ba-4458-83aa-6b3c837130ef)
